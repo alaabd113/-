@@ -1,0 +1,8 @@
+GoldStation V8 DEMO EXECUTION
+Start here: README_AR.md
+1) pip install -r requirements-ctrader.txt
+2) copy config/.env.example to .env, enter DEMO OAuth + account & symbol IDs
+3) python -m scripts.status_demo
+4) python -m scripts.run_demo
+All 75 strategy configurations enabled for DEMO (risk gates apply); LIVE denied.
+SDK / broker validation impossible without your real DEMO OAuth.
