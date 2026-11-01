@@ -1,0 +1,76 @@
+id,timeframe,source,source_type,stop_cap_price_usd,max_hold_bars,rr,enabled_shadow,allow_demo,notes
+ADX_DI_EMA_M5,5min,AhsanAli013/MT5-XAUUSD-Scalping-EA,RULE_ADAPTATION,10.0,36,1.8,True,False,EMA ADX direction variant
+ATR_COMPRESSION_M5,5min,P1Piyush/XAUUSD-Trading-Bots,RULE_ADAPTATION,10.0,40,1.8,True,False,Mechanical volatility expansion proxy
+ATR_EXPANSION_M5,5min,LORD-ZYTHOZ/goldvein,RULE_ADAPTATION,10.0,35,1.5,True,False,ATR expansion momentum candidate
+BB_KELTNER_SQUEEZE_M15,15min,LORD-ZYTHOZ/goldvein,RULE_ADAPTATION,10.0,32,2.0,True,False,Bollinger/Keltner alternate squeeze
+BOLL_RSI_FADE_M5,5min,INDEPENDENT_BOLL_RSI_HYPOTHESIS,RULE_ADAPTATION,10.0,36,1.8,True,False,Generic Bollinger/RSI hypothesis; not Hillary project code
+BOLL_SQUEEZE_M5,5min,scottfrancis90/scottx-trading-research,RULE_ADAPTATION,10.0,40,2.0,True,False,Old V5 rule adaptation; original TP used if rr=None
+CCI_REVERSION_M15,15min,Josewathome/XAUUSD-tradding-bot,RULE_ADAPTATION,10.0,40,1.8,True,False,Independent CCI mean reversion
+CHANNEL_RECLAIM_M5,5min,lordgaruda/XAU-60,RULE_ADAPTATION,10.0,40,1.8,True,False,Mechanical liquidity reclaim
+D1_DONCHIAN20_LONG,1day,MoAbdullahi/Trading-Research,RULE_ADAPTATION,10.0,80,3.0,True,False,Daily long-only breakout baseline
+D1_EMA20_LONG,1day,MoAbdullahi/Trading-Research,RULE_ADAPTATION,10.0,50,2.0,True,False,"Daily long-only baseline, outside M5 peer comparison"
+DONCHIAN10_COMPRESS_M30,30min,WayneTradeFr/quant-research,RULE_ADAPTATION,10.0,45,2.0,True,False,Partial exits/trailing not replicated; fixed RR
+DONCHIAN20_H1,1h,NziCode/mt5-trading-bots,RULE_ADAPTATION,25.0,75,1.8,True,False,Donchian 20 independent hypothesis
+DONCHIAN55_H4,4h,INDEPENDENT_TURTLE_HYPOTHESIS,RULE_ADAPTATION,60.0,90,1.8,True,False,Generic Turtle channel hypothesis; not repo specific
+EMA20_RSI_CROSS_M15,15min,Aniket-Jaiswal2002/xauusd-trading-bot,RULE_ADAPTATION,10.0,36,1.8,True,False,EMA RSI crossover independent rules
+EMA50_200_TREND_H1,1h,MoAbdullahi/Trading-Research,RULE_ADAPTATION,10.0,48,2.0,True,False,Old V5 rule adaptation; original TP used if rr=None
+EMA50_PB_M5,5min,sagarmeravi/XAUUSD-Pullback-Strategy-Development-Analysis-,RULE_ADAPTATION,10.0,35,1.5,True,False,"EMA50 pullback family, rule-based adaptation"
+EMA9_RSI_CROSS_M5,5min,TLBSimon/Funded_EMA_RSI_ATR_EA,RULE_ADAPTATION,10.0,48,1.8,True,False,EMA RSI cross adaptation
+EMA_ATR_CONFIRM_M5,5min,AhsanAli013/MT5-XAUUSD-Scalping-EA,RULE_ADAPTATION,10.0,40,1.8,True,False,EMA RSI ADX ATR entry
+ENGULFING_M5,5min,scottfrancis90/scottx-trading-research,RULE_ADAPTATION,10.0,35,1.5,True,False,Old V5 rule adaptation; original TP used if rr=None
+ENGULF_TREND_M15,15min,erikoleci/gold-xauusd-ea,RULE_ADAPTATION,10.0,40,1.8,True,False,Price action engulf plus trend
+ENGULF_ZONE_RETEST_M5,5min,NadirAliOfficial/engulfing-zone-ea,RULE_ADAPTATION,10.0,35,1.0,True,False,Simplified EMA50 trend instead of full HH/HL confirmation
+FIB_50_618_M15,15min,MouadZaki/Fibonacci-Backtesting-XAUUSD,RULE_ADAPTATION,10.0,35,1.5,True,False,Old V5 rule adaptation; original TP used if rr=None
+FOUR_CANDLE_MOMENTUM_M5,5min,Shivkeerth-Laj/XAUUSD-Backtesting,RULE_ADAPTATION,10.0,35,1.5,True,False,Old V5 rule adaptation; original TP used if rr=None
+FOUR_CANDLE_REVERSAL_M5,5min,Shivkeerth-Laj/XAUUSD-Backtesting,RULE_ADAPTATION,10.0,35,1.5,True,False,Old V5 rule adaptation; original TP used if rr=None
+FVG_SCORE50_M15,15min,foeed/FvgGold-EA,RULE_ADAPTATION,10.0,35,1.5,True,False,"FVG score approximation; H1 trend, no OB/killzone"
+FVG_SCORE70_M15,15min,foeed/FvgGold-EA,RULE_ADAPTATION,10.0,35,1.5,True,False,FVG 70 score approximation
+GOLD_REVERSION_GUARD_M5,5min,ronnisnai-frog/Gold-Scalping,RULE_ADAPTATION,10.0,40,,True,False,Old V5 rule adaptation; original TP used if rr=None
+H1_ORB_3CONSOL,1h,yulz008/GOLD_ORB,RULE_ADAPTATION,10.0,14,1.5,True,False,Simplified ORB; unverified session timezone
+HA_MOMENTUM_H1,1h,manishsolanki1703/XAUUSD-Strategy,RULE_ADAPTATION,25.0,70,1.8,True,False,HA momentum without AI
+HA_RSI_CROSS_M5,5min,manishsolanki1703/XAUUSD-Strategy,RULE_ADAPTATION,10.0,50,1.8,True,False,HA RSI adaptation
+INSIDE_BAR_BREAK_M5,5min,NadirAliOfficial/engulfing-zone-ea,RULE_ADAPTATION,10.0,35,1.5,True,False,"Price-action alternate, independent hypothesis"
+KELTNER_BREAKOUT_M5,5min,LORD-ZYTHOZ/goldvein,RULE_ADAPTATION,10.0,30,2.0,True,False,Independent channel-breakout candidate
+MACD_ADX_LONG_H1,1h,maker-tung/xauusd-trend-follow,RULE_ADAPTATION,10.0,35,2.0,True,False,MACD entry + ADX/EMA; no EA live risk controls
+MACD_EMA_M15,15min,devadarshan-20/QuantEdge-XAUUSD,RULE_ADAPTATION,10.0,50,1.8,True,False,Explainable EMA MACD score subset
+MACD_HIST_TREND_M15,15min,maker-tung/xauusd-trend-follow,RULE_ADAPTATION,10.0,35,1.5,True,False,MACD histogram cross extension
+MID_RANGE_RECLAIM_H1,1h,RicardoBarato/xauusd-mt5-expert-advisor,RULE_ADAPTATION,25.0,70,1.8,True,False,Regime channel reclaim
+MTF_EMA_PULLBACK_M15,15min,itsmustafa119/structure-scope,RULE_ADAPTATION,10.0,35,1.5,True,False,Old V5 rule adaptation; original TP used if rr=None
+NR4_BREAKOUT_M5,5min,yulz008/GOLD_ORB,RULE_ADAPTATION,10.0,35,1.5,True,False,"Compression breakout independent extension, not original ORB"
+NR7_BREAK_M5,5min,NziCode/mt5-trading-bots,RULE_ADAPTATION,10.0,35,1.8,True,False,Narrow range volatility expansion
+PINE_EMA9_18_ALL_M5,5min,Paulaustin3977/OANDA-XAUUSD-Optimized-5m,RULE_ADAPTATION,10.0,3,1.25,True,False,Frozen EMA RSI BB logic; all hours; source params optimized elsewhere
+PINE_EMA9_18_HOURS_M5,5min,Paulaustin3977/OANDA-XAUUSD-Optimized-5m,RULE_ADAPTATION,10.0,3,1.25,True,False,Source-selected UTC hours; local timestamps unverified
+PIN_BAR_M5,5min,scottfrancis90/scottx-trading-research,RULE_ADAPTATION,10.0,35,1.5,True,False,Old V5 rule adaptation; original TP used if rr=None
+PIVOT_CENTRE_M5,5min,mahmoud20138/Gold-MultiAgent-Analyzer,RULE_ADAPTATION,10.0,40,1.8,True,False,"Mechanical pivot signal, not original agent"
+PO3_FROZEN_M5,5min,ORIGINAL_GOLDSTATION_PO3_ENGINE,ORIGINAL_PO3_LOGIC,10.0,120,2.0,True,False,Exact original detection; legacy benchmark results are frozen; new replay differs in fill/exits
+PREV_DAY_BREAK_M5,5min,Turnipnator/Oanda_Gold,RULE_ADAPTATION,10.0,40,1.8,True,False,Broker-time session diagnostic only
+PREV_DAY_PIVOT_M5,5min,Sorama4012/xauusd-strategy-lab,RULE_ADAPTATION,10.0,35,1.5,True,False,"Prior-completed-day pivot rebound, distinct from author strategy"
+PRICE_CHANNEL_M15,15min,P1Piyush/XAUUSD-Trading-Bots,RULE_ADAPTATION,10.0,45,1.8,True,False,Channel momentum subset
+ROC_EMA_H1,1h,Amirgh23/gold-trading-bot,RULE_ADAPTATION,30.0,90,1.8,True,False,Momentum adaptation
+RSI14_EMA50_TREND_M15,15min,Isyakuahmad/xauusd-ema-rsi-algorithm,RULE_ADAPTATION,10.0,32,2.0,True,False,"EMA+RSI threshold variant, not original complete code"
+RSI2_REVERSION_M5,5min,Sorama4012/xauusd-strategy-lab,RULE_ADAPTATION,10.0,25,1.5,True,False,"Generic RSI2 reversal hypothesis, not original strategy"
+SMC_DISCOUNT_PULLBACK_M15,15min,itsmustafa119/structure-scope,RULE_ADAPTATION,10.0,45,2.0,True,False,Old V5 rule adaptation; original TP used if rr=None
+STOCH_EMA_LONG_H1,1h,maker-tung/xauusd-trend-follow,RULE_ADAPTATION,10.0,35,2.0,True,False,Stochastic EMA pullback long-only
+STOCH_REBOUND_M15,15min,INDEPENDENT_STOCH_EMA_HYPOTHESIS,RULE_ADAPTATION,10.0,40,1.8,True,False,Generic stochastic EMA; referenced repository has no disclosed rules
+SUPERTREND_DEMA_M30,30min,WayneTradeFr/quant-research,RULE_ADAPTATION,10.0,45,2.0,True,False,Simplification without M5 triggers/pyramiding
+TRIPLE_CONFIRM_M15,15min,Turnipnator/Oanda_Gold,RULE_ADAPTATION,10.0,48,1.8,True,False,Triple confirmation variant
+TWO_RSI_M5,5min,scottfrancis90/scottx-trading-research,RULE_ADAPTATION,10.0,40,2.0,True,False,Old V5 rule adaptation; original TP used if rr=None
+V5_DONCHIAN55_H4,4h,MoAbdullahi/Trading-Research,RULE_ADAPTATION,10.0,50,2.0,True,False,Old V5 rule adaptation; original TP used if rr=None
+VIRGIN_REJECTION_M1,1min,sivaram311/xauusd-virgin-rejection,RULE_ADAPTATION,0.8,90,1.5,True,False,Old V5 rule adaptation; original TP used if rr=None
+VIRGIN_REJECTION_M5,5min,sivaram311/xauusd-virgin-rejection,RULE_ADAPTATION,0.8,35,1.5,True,False,Old V5 rule adaptation; original TP used if rr=None
+WICK_LEVEL_M15,15min,NadirAliOfficial/trading-scanner,RULE_ADAPTATION,10.0,40,1.8,True,False,Liquidity sweep wick confirmation subset
+WIDE_D1_DONCHIAN20_LONG,1day,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,250.0,80,3.0,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_D1_EMA20_LONG,1day,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,250.0,50,2.0,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_D1_EMA50_PB,1day,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,250.0,35,1.5,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_H1_EMA50_PB,1h,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,30.0,35,1.5,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_H1_MACD_ADX_LONG,1h,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,30.0,35,2.0,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_H1_STOCH_EMA,1h,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,30.0,35,2.0,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_H4_DONCHIAN10_COMP,4h,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,50.0,45,2.0,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_H4_EMA50_PB,4h,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,50.0,35,1.5,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_H4_MACD_ADX_LONG,4h,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,50.0,35,2.0,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_H4_STOCH_EMA,4h,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,50.0,35,2.0,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_M15_EMA50_PB,15min,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,10.0,35,1.5,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_M15_RSI2_REVERSION,15min,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,10.0,25,1.5,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_M30_EMA50_PB,30min,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,10.0,35,1.5,True,False,Wider stop research profile; requires separate swing risk policy
+WIDE_M5_MACD_HIST_TREND,5min,PREVIOUS_WIDE_STOP_RESEARCH,RULE_ADAPTATION,10.0,35,1.5,True,False,Wider stop research profile; requires separate swing risk policy
+ZSCORE_H1,1h,blaster3618/Auri-GOLD,RULE_ADAPTATION,30.0,50,1.8,True,False,Mean reversion hypothesis
