@@ -1,0 +1,37 @@
+name,group,repo,timeframe,bars,stop_cap,trades,win_rate,PF,net_0_4_R,net_1_0_R,last40_trades,last40_R,without_top3_R,comment
+D1_DONCHIAN20_LONG,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,1day,4990,250,74,0.4459,1.956,38.5401,37.6235,33,21.681,29.55,Exploratory; bigger stop incompatible with existing $10 cap
+H4_DONCHIAN10_COMP,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,4h,5045,50,213,0.4038,1.286,37.3371,28.4601,79,20.172,31.363,Exploratory; bigger stop incompatible with existing $10 cap
+H4_STOCH_EMA,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,4h,5045,50,67,0.4627,1.642,23.6291,21.5404,11,15.871,17.654,Exploratory; bigger stop incompatible with existing $10 cap
+H4_MACD_ADX_LONG,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,4h,5045,50,38,0.5,2.047,19.2424,18.1218,8,4.896,13.272,Exploratory; bigger stop incompatible with existing $10 cap
+D1_EMA20_LONG,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,1day,4990,250,111,0.3964,1.206,13.6514,12.0931,52,10.627,7.659,Exploratory; bigger stop incompatible with existing $10 cap
+H4_EMA50_PB,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,4h,5045,50,117,0.453,1.201,13.1403,9.6008,31,13.638,8.665,Exploratory; bigger stop incompatible with existing $10 cap
+H1_MACD_ADX_LONG,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,1h,5176,30,14,0.3571,1.049,0.4678,0.1298,9,2.55,-5.488,Exploratory; bigger stop incompatible with existing $10 cap
+M15_RSI2_REVERSION,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,15min,5729,10,14,0.3571,0.773,-2.1351,-3.0877,4,0.79,-6.511,Exploratory; bigger stop incompatible with existing $10 cap
+M30_EMA50_PB,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,30min,5360,10,3,0.0,0.0,-3.1249,-3.3123,3,-3.125,0.0,Exploratory; bigger stop incompatible with existing $10 cap
+M15_EMA50_PB,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,15min,5729,10,82,0.4146,0.981,-0.9649,-6.9012,50,-4.942,-5.342,Exploratory; bigger stop incompatible with existing $10 cap
+D1_EMA50_PB,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,1day,4990,250,133,0.391,0.933,-5.453,-8.2845,52,-1.762,-9.939,Exploratory; bigger stop incompatible with existing $10 cap
+H1_STOCH_EMA,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,1h,5176,30,42,0.2619,0.644,-11.2151,-12.2635,23,-8.402,-17.173,Exploratory; bigger stop incompatible with existing $10 cap
+H1_EMA50_PB,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,1h,5176,30,103,0.3301,0.693,-22.3742,-25.0832,62,-20.651,-26.832,Exploratory; bigger stop incompatible with existing $10 cap
+M5_MACD_HIST_TREND,RESEARCH_WIDE_STOP,Strategy family source in extended_benchmark.py,5min,7190,10,221,0.4299,0.971,-3.8158,-29.4822,98,-7.123,-8.189,Exploratory; bigger stop incompatible with existing $10 cap
+MACD_ADX_LONG_H1,STRICT_SL10,maker-tung/xauusd-trend-follow,1h,5176,10,0,,,0.0,0.0,0,0.0,0.0,MACD entry + ADX/EMA; no EA live risk controls
+STOCH_EMA_LONG_H1,STRICT_SL10,maker-tung/xauusd-trend-follow,1h,5176,10,0,,,0.0,0.0,0,0.0,0.0,Stochastic EMA pullback long-only
+SUPERTREND_DEMA_M30,STRICT_SL10,WayneTradeFr/quant-research,30min,5360,10,0,,,0.0,0.0,0,0.0,0.0,Simplification without M5 triggers/pyramiding
+D1_EMA20_LONG,STRICT_SL10,MoAbdullahi/Trading-Research,1day,4990,10,0,,,0.0,0.0,0,0.0,0.0,"Daily long-only baseline, outside M5 peer comparison"
+D1_DONCHIAN20_LONG,STRICT_SL10,MoAbdullahi/Trading-Research,1day,4990,10,0,,,0.0,0.0,0,0.0,0.0,Daily long-only breakout baseline
+H1_ORB_3CONSOL,STRICT_SL10,yulz008/GOLD_ORB,1h,5176,10,0,,,0.0,0.0,0,0.0,0.0,Simplified ORB; unverified session timezone
+ENGULF_ZONE_RETEST_M5,STRICT_SL10,NadirAliOfficial/engulfing-zone-ea,5min,7190,10,1,0.0,0.0,-1.0792,-1.198,1,-1.0792,0.0,Simplified EMA50 trend instead of full HH/HL confirmation
+RSI2_REVERSION_M5,STRICT_SL10,Sorama4012/xauusd-strategy-lab,5min,7190,10,16,0.4375,0.935,-0.6736,-3.1835,5,1.9656,-4.9505,"Generic RSI2 reversal hypothesis, not original strategy"
+DONCHIAN10_COMPRESS_M30,STRICT_SL10,WayneTradeFr/quant-research,30min,5360,10,95,0.3579,1.041,2.6475,-3.8814,47,1.7849,-3.2314,Partial exits/trailing not replicated; fixed RR
+PREV_DAY_PIVOT_M5,STRICT_SL10,Sorama4012/xauusd-strategy-lab,5min,7190,10,56,0.4286,1.012,0.4137,-5.6855,24,-3.3586,-3.9433,"Prior-completed-day pivot rebound, distinct from author strategy"
+FVG_SCORE70_M15,STRICT_SL10,foeed/FvgGold-EA,15min,5729,10,59,0.4237,0.979,-0.7702,-7.1754,27,-1.5813,-5.1464,FVG 70 score approximation
+EMA50_PB_M5,STRICT_SL10,sagarmeravi/XAUUSD-Pullback-Strategy-Development-Analysis-,5min,7190,10,225,0.4622,1.1,13.1448,-14.2763,112,20.5848,8.7695,"EMA50 pullback family, rule-based adaptation"
+MACD_HIST_TREND_M15,STRICT_SL10,maker-tung/xauusd-trend-follow,15min,5729,10,56,0.3393,0.712,-11.1484,-15.1209,39,-8.3866,-15.525,MACD histogram cross extension
+BB_KELTNER_SQUEEZE_M15,STRICT_SL10,LORD-ZYTHOZ/goldvein,15min,5729,10,70,0.2714,0.707,-15.3589,-20.4018,44,-6.1913,-21.2343,Bollinger/Keltner alternate squeeze
+RSI14_EMA50_TREND_M15,STRICT_SL10,Isyakuahmad/xauusd-ema-rsi-algorithm,15min,5729,10,90,0.2778,0.692,-20.8678,-26.9272,52,-10.9473,-26.7474,"EMA+RSI threshold variant, not original complete code"
+ATR_EXPANSION_M5,STRICT_SL10,LORD-ZYTHOZ/goldvein,5min,7190,10,119,0.3697,0.765,-18.7132,-30.8056,55,-16.0643,-23.0819,ATR expansion momentum candidate
+PINE_EMA9_18_HOURS_M5,STRICT_SL10,Paulaustin3977/OANDA-XAUUSD-Optimized-5m,5min,7190,10,293,0.4676,0.85,-13.7693,-42.0666,124,-5.8148,-17.3789,Source-selected UTC hours; local timestamps unverified
+FVG_SCORE50_M15,STRICT_SL10,foeed/FvgGold-EA,15min,5729,10,215,0.3907,0.822,-25.3449,-54.038,109,-10.0784,-29.7212,"FVG score approximation; H1 trend, no OB/killzone"
+KELTNER_BREAKOUT_M5,STRICT_SL10,LORD-ZYTHOZ/goldvein,5min,7190,10,232,0.3362,0.839,-26.7108,-56.9324,86,-16.1595,-32.5673,Independent channel-breakout candidate
+NR4_BREAKOUT_M5,STRICT_SL10,yulz008/GOLD_ORB,5min,7190,10,480,0.425,0.974,-7.7407,-65.0456,196,-15.797,-12.1186,"Compression breakout independent extension, not original ORB"
+INSIDE_BAR_BREAK_M5,STRICT_SL10,NadirAliOfficial/engulfing-zone-ea,5min,7190,10,242,0.376,0.76,-39.2337,-72.0069,105,-15.0395,-43.6064,"Price-action alternate, independent hypothesis"
+PINE_EMA9_18_ALL_M5,STRICT_SL10,Paulaustin3977/OANDA-XAUUSD-Optimized-5m,5min,7190,10,1041,0.4621,0.78,-68.8459,-164.3622,435,-40.3407,-72.4738,Frozen EMA RSI BB logic; all hours; source params optimized elsewhere
