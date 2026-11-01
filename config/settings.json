@@ -89,5 +89,5 @@
     "ZSCORE_H1"
   ],
   "paper_shadow_ids": [],
-  "max_swing_sl_price_usd": 250
+  "max_swing_sl_price_usd": 250.0
 }
