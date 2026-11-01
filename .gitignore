@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+*.key
+*.pem
+*.log
+.venv/
+GoldStation_V9_RESTORED/
+*.incomplete
