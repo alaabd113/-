@@ -1,0 +1,25 @@
+strategy,timeframe,source_repo,trades,win_rate,total_R_cost0.4,total_R_cost1.0,total_R_cost2.0,PF_cost0.4,late35_R,maxDD_R,method
+BOLL_RSI_FADE_M5,5min,HillaryMurimi/mt5-gold-ai-trader,141,0.4681,31.4211,14.8456,-12.7803,1.397,20.6374,13.784,independent adaptation
+HA_MOMENTUM_H1,1h,manishsolanki1703/XAUUSD-Strategy,200,0.415,27.7972,22.1692,12.7891,1.232,1.7467,16.538,independent adaptation
+DONCHIAN55_H4,4h,fsabiu/Trading-GoldFutures,68,0.4265,11.964,10.4817,8.0111,1.308,2.5748,6.057,independent adaptation
+DONCHIAN20_H1,1h,NziCode/mt5-trading-bots,9,0.7778,10.4472,10.2181,9.8362,6.136,5.0967,1.018,independent adaptation
+TRIPLE_CONFIRM_M15,15min,Turnipnator/Oanda_Gold,171,0.3918,7.2434,-5.5708,-26.9278,1.066,10.2425,16.182,independent adaptation
+ATR_COMPRESSION_M5,5min,P1Piyush/XAUUSD-Trading-Bots,0,,0.0,0.0,0.0,,0.0,,independent adaptation
+MID_RANGE_RECLAIM_H1,1h,RicardoBarato/xauusd-mt5-expert-advisor,18,0.3333,-1.5158,-1.9894,-2.7788,0.876,-4.8281,4.828,independent adaptation
+MACD_EMA_M15,15min,devadarshan-20/QuantEdge-XAUUSD,15,0.3333,-1.6921,-2.7302,-4.4603,0.838,-1.368,4.178,independent adaptation
+ROC_EMA_H1,1h,Amirgh23/gold-trading-bot,65,0.3538,-3.1746,-4.6985,-7.2383,0.926,-10.6239,12.02,independent adaptation
+EMA20_RSI_CROSS_M15,15min,Aniket-Jaiswal2002/xauusd-trading-bot,23,0.3043,-4.4506,-6.0265,-8.653,0.734,4.2238,9.39,independent adaptation
+PRICE_CHANNEL_M15,15min,P1Piyush/XAUUSD-Trading-Bots,93,0.3548,-4.4963,-10.9785,-21.7821,0.928,-5.7603,16.326,independent adaptation
+ADX_DI_EMA_M5,5min,AhsanAli013/MT5-XAUUSD-Scalping-EA,92,0.3804,-4.9659,-14.7086,-30.9465,0.916,-6.5708,12.428,independent adaptation
+ZSCORE_H1,1h,blaster3618/Auri-GOLD,17,0.2353,-6.3508,-6.7664,-7.459,0.489,-5.8158,6.351,independent adaptation
+STOCH_REBOUND_M15,15min,Michael-Ishak/MQL5-XAUUSD-Trading-Expert-Advisor,47,0.3191,-7.1435,-10.3587,-15.7174,0.786,-0.2415,10.386,independent adaptation
+EMA9_RSI_CROSS_M5,5min,TLBSimon/Funded_EMA_RSI_ATR_EA,167,0.3832,-7.3341,-25.688,-56.2777,0.934,-7.0998,18.248,independent adaptation
+CCI_REVERSION_M15,15min,Josewathome/XAUUSD-tradding-bot,20,0.2,-9.0524,-10.4049,-12.6591,0.437,-9.7699,13.255,independent adaptation
+WICK_LEVEL_M15,15min,NadirAliOfficial/trading-scanner,51,0.2941,-12.7413,-16.1607,-21.8597,0.661,-8.3157,14.151,independent adaptation
+ENGULF_TREND_M15,15min,erikoleci/gold-xauusd-ea,90,0.3222,-13.1239,-19.6098,-30.4195,0.795,-12.8803,19.491,independent adaptation
+EMA_ATR_CONFIRM_M5,5min,AhsanAli013/MT5-XAUUSD-Scalping-EA,118,0.339,-15.7596,-29.2942,-51.8518,0.809,-11.1139,19.565,independent adaptation
+HA_RSI_CROSS_M5,5min,manishsolanki1703/XAUUSD-Strategy,241,0.361,-20.9474,-50.2886,-99.1905,0.875,7.0914,32.92,independent adaptation
+PREV_DAY_BREAK_M5,5min,Turnipnator/Oanda_Gold,70,0.2571,-25.6829,-33.3082,-46.0171,0.548,0.8161,31.2,independent adaptation
+PIVOT_CENTRE_M5,5min,mahmoud20138/Gold-MultiAgent-Analyzer,247,0.3522,-26.228,-55.8637,-105.2566,0.846,0.688,33.421,independent adaptation
+CHANNEL_RECLAIM_M5,5min,lordgaruda/XAU-60,276,0.3514,-27.7151,-59.435,-112.3014,0.853,-6.8688,38.703,independent adaptation
+NR7_BREAK_M5,5min,NziCode/mt5-trading-bots,346,0.341,-50.7886,-91.2033,-158.5611,0.791,-26.9894,63.495,independent adaptation
