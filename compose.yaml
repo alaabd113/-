@@ -1,0 +1,11 @@
+services:
+  gold-demo:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./runtime:/app/runtime
+      - ./data/ctrader_live:/app/data/ctrader_live
+    security_opt:
+      - no-new-privileges:true
