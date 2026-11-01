@@ -1,0 +1,17 @@
+{
+  "tested_variants": 75,
+  "positive_at_assumed_cost0_4": 17,
+  "zero_trades": 8,
+  "benchmark_PO3_original_previous": {
+    "trades": 55,
+    "net_R": 5.92,
+    "caution": "frozen original benchmark not matched to V7 generic replay"
+  },
+  "warnings": [
+    "Old candle time zone unverified (research-only).",
+    "Data have no full historical Bid/Ask for fill simulation.",
+    "Research screening is NOT pristine out-of-sample.",
+    "Research adapters are NOT exact third-party EAs.",
+    "No real SDK connection or demo fills tested."
+  ]
+}
