@@ -1,0 +1,92 @@
+// GoldStation independent PO3 research translation. NOT a LuxAlgo derivative.
+// Original GoldStation Python PO3 remains the frozen benchmark (+5.92R historical).
+// The TradingView broker emulator/fill model differs: expect different results.
+//@version=6
+strategy("GoldStation — PO3 M5 Causal Research", overlay=true, pyramiding=0, process_orders_on_close=false, initial_capital=10000, commission_type=strategy.commission.cash_per_order, commission_value=0, max_labels_count=100)
+
+atrLen = input.int(14, "ATR SMA period", minval=2)
+rangeBars = input.int(12, "Accumulation bars", minval=3)
+rangeMaxATR = input.float(3.5, "Range maximum (ATR)", minval=0.1, step=0.1)
+sweepMinATR = input.float(0.03, "Sweep minimum ATR", minval=0.0)
+slBufferATR = input.float(0.08, "SL buffer ATR", minval=0.0)
+maxConfirmBars = input.int(6, "Distribution confirmation bars", minval=1, maxval=20)
+minStop = input.float(0.40, "Minimum stop in gold price units", minval=0.01)
+maxStop = input.float(10.0, "Maximum stop in gold price units", minval=0.01)
+rr = input.float(2.0, "Research target in R", minval=0.5)
+showSetups = input.bool(true, "Show PO3 sweep candles")
+
+// Only PREVIOUSLY CLOSED H4 bars are accessed. Using lookahead_on is safe
+// here ONLY because both expressions are delayed by at least one H4 bar.
+[h4Closed, h4Prev8] = request.security(syminfo.tickerid, "240", [close[1], ta.sma(close[2], 8)], lookahead=barmerge.lookahead_on)
+h4Bias = h4Closed > h4Prev8 ? 1 : h4Closed < h4Prev8 ? -1 : 0
+atr = ta.sma(ta.tr(true), atrLen)  // matches original research ATR's arithmetic TR mean
+priorHi = ta.highest(high[1], rangeBars)
+priorLo = ta.lowest(low[1], rangeBars)
+validRange = not na(atr) and atr > 0 and (priorHi-priorLo <= rangeMaxATR*atr)
+noGap = not na(time[1]) and time-time[1] <= 20*60*1000
+
+var int setupSide = 0
+var int setupBar = na
+var float setupMiddle = na
+var float setupExtreme = na
+var float activeStop = na
+var float activeRisk = na
+var bool orderPending = false
+
+bool longSignal = false
+bool shortSignal = false
+bool newSweepBuy = false
+bool newSweepSell = false
+if barstate.isconfirmed and timeframe.isminutes and timeframe.multiplier == 5
+    if strategy.position_size == 0 and setupSide != 0 and not na(setupBar)
+        age = bar_index - setupBar
+        if not noGap or age > maxConfirmBars
+            setupSide := 0
+        else if age > 0 and (setupSide == 1 ? close > setupMiddle and h4Bias == 1 : close < setupMiddle and h4Bias == -1)
+            stopPx = setupExtreme - setupSide*slBufferATR*atr
+            riskPx = setupSide*(close-stopPx)
+            if riskPx >= minStop and riskPx <= maxStop
+                if setupSide == 1
+                    strategy.entry("PO3-L", strategy.long)
+                    longSignal := true
+                else
+                    strategy.entry("PO3-S", strategy.short)
+                    shortSignal := true
+                activeStop := stopPx
+                activeRisk := riskPx
+                orderPending := true
+            setupSide := 0
+    if validRange and noGap and strategy.position_size == 0 and not orderPending
+        newSweepBuy := low < priorLo-sweepMinATR*atr and close > priorLo and close < priorHi
+        newSweepSell := high > priorHi+sweepMinATR*atr and close < priorHi and close > priorLo
+        if newSweepBuy != newSweepSell
+            setupSide := newSweepBuy ? 1 : -1
+            setupBar := bar_index
+            setupExtreme := newSweepBuy ? low : high
+            setupMiddle := (priorHi+priorLo)/2
+
+if strategy.position_size != 0
+    orderPending := false
+    fill = strategy.position_avg_price
+    fillRisk = strategy.position_size > 0 ? fill-activeStop : activeStop-fill
+    if fillRisk > 0 and fillRisk <= maxStop
+        target = fill + (strategy.position_size > 0 ? 1.0 : -1.0)*fillRisk*rr
+        strategy.exit("PO3-L-X", from_entry="PO3-L", stop=activeStop, limit=target)
+        strategy.exit("PO3-S-X", from_entry="PO3-S", stop=activeStop, limit=target)
+    else
+        strategy.close_all(comment="Fill outside stop policy")
+if strategy.position_size == 0 and strategy.position_size[1] != 0
+    activeStop := na
+    activeRisk := na
+    orderPending := false
+
+plotshape(showSetups and newSweepBuy, "Accumulation sweep low", shape.circle, location.belowbar, color.new(color.teal,20), size=size.tiny)
+plotshape(showSetups and newSweepSell, "Accumulation sweep high", shape.circle, location.abovebar, color.new(color.orange,20), size=size.tiny)
+plotshape(longSignal, "PO3 long confirmed", shape.triangleup, location.belowbar, color.lime, size=size.small)
+plotshape(shortSignal, "PO3 short confirmed", shape.triangledown, location.abovebar, color.red, size=size.small)
+plot(strategy.position_size != 0 ? activeStop : na, "Active stop", color.red, style=plot.style_linebr)
+plot(h4Closed, "Confirmed H4 close", color.new(color.blue,75))
+if longSignal
+    alert("GoldStation PO3 BUY — research; confirm with server and broker risk gate", alert.freq_once_per_bar_close)
+if shortSignal
+    alert("GoldStation PO3 SELL — research; confirm with server and broker risk gate", alert.freq_once_per_bar_close)
