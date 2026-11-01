@@ -1,0 +1,63 @@
+name: Verify GoldStation V9 Upload
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-v9:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Restore original binary assets and verify every transferred part
+        run: python scripts/restore_v9_binaries.py
+
+      - name: Verify restored binary assets again
+        run: python scripts/restore_v9_binaries.py --verify-only
+
+      - name: Verify all 163 original source and data files against SHA256 manifest
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          root = Path.cwd().resolve()
+          manifest = json.loads((root / 'MANIFEST_SHA256.json').read_text(encoding='utf-8'))
+          failures = []
+          for rel, expected in manifest['files'].items():
+              path = (root / rel).resolve()
+              if not path.is_relative_to(root) or not path.is_file():
+                  failures.append(f'MISSING: {rel}')
+                  continue
+              h = hashlib.sha256()
+              with path.open('rb') as f:
+                  for chunk in iter(lambda: f.read(1024 * 1024), b''):
+                      h.update(chunk)
+              if path.stat().st_size != expected['bytes'] or h.hexdigest() != expected['sha256']:
+                  failures.append(f'MISMATCH: {rel}')
+          for failure in failures:
+              print(failure)
+          if failures:
+              raise SystemExit(f'{len(failures)} original files failed verification')
+          print(f"ALL_{len(manifest['files'])}_ORIGINAL_FILES_SHA256_OK")
+          PY
+
+      - name: Install offline test dependencies
+        run: python -m pip install -r requirements-research.txt
+
+      - name: Run offline code and unit checks (no broker connection)
+        run: python -m scripts.verify_all
