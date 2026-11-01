@@ -1,0 +1,682 @@
+{
+  "schema": 1,
+  "market": "XAUUSD",
+  "execution_mode": "DEMO",
+  "strategies": {
+    "ADX_DI_EMA_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "AhsanAli013/MT5-XAUUSD-Scalping-EA",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "ATR_COMPRESSION_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "P1Piyush/XAUUSD-Trading-Bots",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "ATR_EXPANSION_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "LORD-ZYTHOZ/goldvein",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "BB_KELTNER_SQUEEZE_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "LORD-ZYTHOZ/goldvein",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "BOLL_RSI_FADE_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "INDEPENDENT_BOLL_RSI_HYPOTHESIS",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "BOLL_SQUEEZE_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "scottfrancis90/scottx-trading-research",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "CCI_REVERSION_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "Josewathome/XAUUSD-tradding-bot",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "CHANNEL_RECLAIM_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "lordgaruda/XAU-60",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "D1_DONCHIAN20_LONG": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "1day",
+      "source": "MoAbdullahi/Trading-Research",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "D1_EMA20_LONG": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "1day",
+      "source": "MoAbdullahi/Trading-Research",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "DONCHIAN10_COMPRESS_M30": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "30min",
+      "source": "WayneTradeFr/quant-research",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "DONCHIAN20_H1": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 25.0,
+      "timeframe": "1h",
+      "source": "NziCode/mt5-trading-bots",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "DONCHIAN55_H4": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 60.0,
+      "timeframe": "4h",
+      "source": "INDEPENDENT_TURTLE_HYPOTHESIS",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "EMA20_RSI_CROSS_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "Aniket-Jaiswal2002/xauusd-trading-bot",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "EMA50_200_TREND_H1": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "1h",
+      "source": "MoAbdullahi/Trading-Research",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "EMA50_PB_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "sagarmeravi/XAUUSD-Pullback-Strategy-Development-Analysis-",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "EMA9_RSI_CROSS_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "TLBSimon/Funded_EMA_RSI_ATR_EA",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "EMA_ATR_CONFIRM_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "AhsanAli013/MT5-XAUUSD-Scalping-EA",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "ENGULFING_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "scottfrancis90/scottx-trading-research",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "ENGULF_TREND_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "erikoleci/gold-xauusd-ea",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "ENGULF_ZONE_RETEST_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "NadirAliOfficial/engulfing-zone-ea",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "FIB_50_618_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "MouadZaki/Fibonacci-Backtesting-XAUUSD",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "FOUR_CANDLE_MOMENTUM_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "Shivkeerth-Laj/XAUUSD-Backtesting",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "FOUR_CANDLE_REVERSAL_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "Shivkeerth-Laj/XAUUSD-Backtesting",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "FVG_SCORE50_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "foeed/FvgGold-EA",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "FVG_SCORE70_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "foeed/FvgGold-EA",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "GOLD_REVERSION_GUARD_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "ronnisnai-frog/Gold-Scalping",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "H1_ORB_3CONSOL": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "1h",
+      "source": "yulz008/GOLD_ORB",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "HA_MOMENTUM_H1": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 25.0,
+      "timeframe": "1h",
+      "source": "manishsolanki1703/XAUUSD-Strategy",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "HA_RSI_CROSS_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "manishsolanki1703/XAUUSD-Strategy",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "INSIDE_BAR_BREAK_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "NadirAliOfficial/engulfing-zone-ea",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "KELTNER_BREAKOUT_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "LORD-ZYTHOZ/goldvein",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "MACD_ADX_LONG_H1": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "1h",
+      "source": "maker-tung/xauusd-trend-follow",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "MACD_EMA_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "devadarshan-20/QuantEdge-XAUUSD",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "MACD_HIST_TREND_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "maker-tung/xauusd-trend-follow",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "MID_RANGE_RECLAIM_H1": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 25.0,
+      "timeframe": "1h",
+      "source": "RicardoBarato/xauusd-mt5-expert-advisor",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "MTF_EMA_PULLBACK_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "itsmustafa119/structure-scope",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "NR4_BREAKOUT_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "yulz008/GOLD_ORB",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "NR7_BREAK_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "NziCode/mt5-trading-bots",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "PINE_EMA9_18_ALL_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "Paulaustin3977/OANDA-XAUUSD-Optimized-5m",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "PINE_EMA9_18_HOURS_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "Paulaustin3977/OANDA-XAUUSD-Optimized-5m",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "PIN_BAR_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "scottfrancis90/scottx-trading-research",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "PIVOT_CENTRE_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "mahmoud20138/Gold-MultiAgent-Analyzer",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "PO3_FROZEN_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "ORIGINAL_GOLDSTATION_PO3_ENGINE",
+      "source_type": "ORIGINAL_PO3_LOGIC"
+    },
+    "PREV_DAY_BREAK_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "Turnipnator/Oanda_Gold",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "PREV_DAY_PIVOT_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "Sorama4012/xauusd-strategy-lab",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "PRICE_CHANNEL_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "P1Piyush/XAUUSD-Trading-Bots",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "ROC_EMA_H1": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 30.0,
+      "timeframe": "1h",
+      "source": "Amirgh23/gold-trading-bot",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "RSI14_EMA50_TREND_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "Isyakuahmad/xauusd-ema-rsi-algorithm",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "RSI2_REVERSION_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "Sorama4012/xauusd-strategy-lab",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "SMC_DISCOUNT_PULLBACK_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "itsmustafa119/structure-scope",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "STOCH_EMA_LONG_H1": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "1h",
+      "source": "maker-tung/xauusd-trend-follow",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "STOCH_REBOUND_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "INDEPENDENT_STOCH_EMA_HYPOTHESIS",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "SUPERTREND_DEMA_M30": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "30min",
+      "source": "WayneTradeFr/quant-research",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "TRIPLE_CONFIRM_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "Turnipnator/Oanda_Gold",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "TWO_RSI_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "scottfrancis90/scottx-trading-research",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "V5_DONCHIAN55_H4": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "4h",
+      "source": "MoAbdullahi/Trading-Research",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "VIRGIN_REJECTION_M1": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 0.8,
+      "timeframe": "1min",
+      "source": "sivaram311/xauusd-virgin-rejection",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "VIRGIN_REJECTION_M5": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 0.8,
+      "timeframe": "5min",
+      "source": "sivaram311/xauusd-virgin-rejection",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WICK_LEVEL_M15": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "NadirAliOfficial/trading-scanner",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_D1_DONCHIAN20_LONG": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 250.0,
+      "timeframe": "1day",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_D1_EMA20_LONG": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 250.0,
+      "timeframe": "1day",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_D1_EMA50_PB": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 250.0,
+      "timeframe": "1day",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_H1_EMA50_PB": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 30.0,
+      "timeframe": "1h",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_H1_MACD_ADX_LONG": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 30.0,
+      "timeframe": "1h",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_H1_STOCH_EMA": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 30.0,
+      "timeframe": "1h",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_H4_DONCHIAN10_COMP": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 50.0,
+      "timeframe": "4h",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_H4_EMA50_PB": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 50.0,
+      "timeframe": "4h",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_H4_MACD_ADX_LONG": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 50.0,
+      "timeframe": "4h",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_H4_STOCH_EMA": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 50.0,
+      "timeframe": "4h",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_M15_EMA50_PB": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_M15_RSI2_REVERSION": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "15min",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_M30_EMA50_PB": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "30min",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "WIDE_M5_MACD_HIST_TREND": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 10.0,
+      "timeframe": "5min",
+      "source": "PREVIOUS_WIDE_STOP_RESEARCH",
+      "source_type": "RULE_ADAPTATION"
+    },
+    "ZSCORE_H1": {
+      "enabled": true,
+      "allow_demo": true,
+      "research_only": false,
+      "stop_cap": 30.0,
+      "timeframe": "1h",
+      "source": "blaster3618/Auri-GOLD",
+      "source_type": "RULE_ADAPTATION"
+    }
+  }
+}
