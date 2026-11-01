@@ -1,0 +1,31 @@
+repository,link,family,inspection_level,test_status
+codebytemirza/XAUUSD_TRADING_ASISTENT_AI,https://github.com/codebytemirza/XAUUSD_TRADING_ASISTENT_AI,AI assistant/orchestration,metadata,no reproducible candle-only strategy
+lordgaruda/XAU-60,https://github.com/lordgaruda/XAU-60,SMC + strategy/risk/dashboard,README,"data/control architecture, not exact model"
+El-Bach/claude-trader,https://github.com/El-Bach/claude-trader,multiagent trading,README,depends on proprietary LLM and MT5
+kennycornellius-collab/DRL-XAUUSD-Bot,https://github.com/kennycornellius-collab/DRL-XAUUSD-Bot,SAC reinforcement learning,README,trained model/ML training required
+mahmoud20138/Gold-MultiAgent-Analyzer,https://github.com/mahmoud20138/Gold-MultiAgent-Analyzer,agent-based gold analysis,metadata,requires AI agents; pivot variant is independent hypothesis
+Aniket-Jaiswal2002/xauusd-trading-bot,https://github.com/Aniket-Jaiswal2002/xauusd-trading-bot,EMA + RSI + ATR,README,mechanical adaptation tested
+manishsolanki1703/XAUUSD-Strategy,https://github.com/manishsolanki1703/XAUUSD-Strategy,Heikin Ashi + RSI + EMA,README,two independent adaptations tested
+devadarshan-20/QuantEdge-XAUUSD,https://github.com/devadarshan-20/QuantEdge-XAUUSD,EMA/RSI/MACD/ATR score,README,indicator subset tested
+TLBSimon/Funded_EMA_RSI_ATR_EA,https://github.com/TLBSimon/Funded_EMA_RSI_ATR_EA,EMA + RSI + ATR pullback,README,signal approximation tested
+Michael-Ishak/MQL5-XAUUSD-Trading-Expert-Advisor,https://github.com/Michael-Ishak/MQL5-XAUUSD-Trading-Expert-Advisor,claimed EA backtests,README,original C++ source not publicly supplied; cannot test original
+AhsanAli013/MT5-XAUUSD-Scalping-EA,https://github.com/AhsanAli013/MT5-XAUUSD-Scalping-EA,EMA RSI ADX ATR,README,mechanical approximation tested
+RicardoBarato/xauusd-mt5-expert-advisor,https://github.com/RicardoBarato/xauusd-mt5-expert-advisor,regime + risk-control,README,"channel proxy, not exact EA"
+HillaryMurimi/mt5-gold-ai-trader,https://github.com/HillaryMurimi/mt5-gold-ai-trader,gold AI + sentiment,metadata,"needs model/sentiment, not OHLC only"
+NziCode/mt5-trading-bots,https://github.com/NziCode/mt5-trading-bots,multiasset bots,metadata,generic channel hypotheses; not exact repo port
+Turnipnator/Oanda_Gold,https://github.com/Turnipnator/Oanda_Gold,triple confirmation,README,mechanical approximation tested
+Amirgh23/gold-trading-bot,https://github.com/Amirgh23/gold-trading-bot,ensemble,metadata,ROC momentum hypothesis not copied from repo
+triqbit/tradingbot,https://github.com/triqbit/tradingbot,PPO/Dreamer AI,metadata,trained model and full feature feed required
+blaster3618/Auri-GOLD,https://github.com/blaster3618/Auri-GOLD,paper/live research,metadata,zscore hypothesis independent
+erikoleci/gold-xauusd-ea,https://github.com/erikoleci/gold-xauusd-ea,trend/pullback,metadata,simple engulf trend proxy
+P1Piyush/XAUUSD-Trading-Bots,https://github.com/P1Piyush/XAUUSD-Trading-Bots,ICT/SMC/ML scalping,metadata,mechanical channel subset only
+NadirAliOfficial/trading-scanner,https://github.com/NadirAliOfficial/trading-scanner,BOS/FVG/sweep scanner,metadata,wick level subset only
+rest-assure-atlas/xauusd_lab,https://github.com/rest-assure-atlas/xauusd_lab,quant research platform,metadata,not executable OHLC strategy from metadata
+vedkanani123/shakuni_trap,https://github.com/vedkanani123/shakuni_trap,EA + indicators research,metadata,very large research; not run
+azb27/skeptic,https://github.com/azb27/skeptic,strategy audit/test agent,metadata,"research audit resource, not entry strategy"
+fsabiu/Trading-GoldFutures,https://github.com/fsabiu/Trading-GoldFutures,gold futures MT5,metadata,independent Donchian test is NOT claimed as its strategy
+darshitxshah/ml-metal-futures-trading,https://github.com/darshitxshah/ml-metal-futures-trading,ML on COMEX metals,metadata,different instrument and ML feed
+obwocha7/Gold-trading-bot-Python-,https://github.com/obwocha7/Gold-trading-bot-Python-,MT5 gold EA,metadata,not ported
+N7-py/gold-scalper-bot,https://github.com/N7-py/gold-scalper-bot,XAUUSDT EMA/RSI/ATR scalper,metadata,XAUUSDT not CFD XAUUSD; not directly comparable
+Prajwalsp83/ai-trading-bot-v2,https://github.com/Prajwalsp83/ai-trading-bot-v2,SMC + breakout journal,metadata,needs original execution model
+Josewathome/XAUUSD-tradding-bot,https://github.com/Josewathome/XAUUSD-tradding-bot,MT5 Wine + research stress,metadata,"backtest methodology, not copied"
