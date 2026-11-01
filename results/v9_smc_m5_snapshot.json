@@ -1,0 +1,46 @@
+{
+  "sample_source": "cTrader CSV snapshot; timestamp timezone NOT verified",
+  "timeframe": "5min",
+  "bars": 7190,
+  "start": "2026-09-24 12:35:00",
+  "end": "2026-10-30 13:40:00",
+  "events": {
+    "NONE": 6656,
+    "BULL_BOS": 121,
+    "BEAR_CHOCH": 139,
+    "BULL_CHOCH": 139,
+    "BEAR_BOS": 135
+  },
+  "sweeps": {
+    "BUY_SIDE": 495,
+    "SELL_SIDE": 489,
+    "BOTH": 18
+  },
+  "fvg": {
+    "BEAR": 877,
+    "BULL": 801
+  },
+  "last_context": {
+    "bar_time": "2026-10-30 13:40:00",
+    "structure": "NONE",
+    "bias": 1,
+    "last_swing_high": 3993.21,
+    "last_swing_low": 3965.22,
+    "sweep": null,
+    "fvg": null,
+    "fvg_low": null,
+    "fvg_high": null,
+    "equal_high": false,
+    "equal_low": false,
+    "order_block": {
+      "side": "BUY",
+      "low": 3985.83,
+      "high": 3987.9,
+      "known_at": "2026-10-30 11:45:00"
+    },
+    "premium_discount": "EQUILIBRIUM"
+  },
+  "elapsed_seconds": 0.085,
+  "volume_profile": "UNAVAILABLE_IN_LEGACY_CSV_NO_VOLUME",
+  "backtest_profit": "NOT_COMPUTED"
+}
