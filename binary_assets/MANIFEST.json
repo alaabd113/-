@@ -46,14 +46,14 @@
       "path": "data/candles.db-shm",
       "size": 32768,
       "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
-      "transfer_encoding": "raw",
-      "transfer_size": 32768,
-      "transfer_sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "transfer_encoding": "xz",
+      "transfer_size": 156,
+      "transfer_sha256": "4f8d23365929b94cdb016e534e76f3c5988a1ea709ed7121df8d5e54cb963974",
       "chunks": [
         {
           "file": "binary_assets/db/candles.db-shm.part001.b64",
-          "size": 32768,
-          "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+          "size": 156,
+          "sha256": "4f8d23365929b94cdb016e534e76f3c5988a1ea709ed7121df8d5e54cb963974"
         }
       ]
     },
