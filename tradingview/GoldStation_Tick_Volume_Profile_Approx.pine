@@ -1,0 +1,83 @@
+// GoldStation original approximation (no third-party Volume Profile source copied).
+// Volume is distributed proportionally over each candle's high/low range;
+// NOT an exchange tick-by-price volume profile or order-flow delta.
+//@version=6
+indicator("GoldStation — Estimated Volume Profile POC/VAH/VAL", overlay=true, max_boxes_count=150, max_lines_count=20)
+lookback = input.int(160, "Lookback candles", minval=20, maxval=450)
+rows = input.int(32, "Price bins", minval=8, maxval=80)
+area = input.float(70.0, "Value area %", minval=50.0, maxval=95.0)
+width = input.int(25, "Profile width, bars", minval=5, maxval=80)
+var box[] blocks = array.new_box()
+var line pocLine = na
+var line vahLine = na
+var line valLine = na
+var label warning = na
+
+// Chart-only visualization recalculated on the final bar, no trading signals.
+if barstate.islast
+    for b in blocks
+        box.delete(b)
+    array.clear(blocks)
+    if not na(pocLine)
+        line.delete(pocLine)
+    if not na(vahLine)
+        line.delete(vahLine)
+    if not na(valLine)
+        line.delete(valLine)
+    if not na(warning)
+        label.delete(warning)
+    n = math.min(lookback, bar_index + 1)
+    minPx = ta.lowest(low, n)
+    maxPx = ta.highest(high, n)
+    stepPx = (maxPx-minPx)/rows
+    vols = array.new_float(rows, 0.0)
+    sumVol = 0.0
+    if n >= 20 and stepPx > 0
+        for i = 0 to n-1
+            v = volume[i]
+            lo = low[i]
+            hi = high[i]
+            if not na(v) and v > 0 and hi >= lo
+                sumVol += v
+                for j = 0 to rows-1
+                    bottom = minPx+j*stepPx
+                    top = bottom+stepPx
+                    portion = hi > lo ? math.max(0.0, math.min(hi,top)-math.max(lo,bottom))/(hi-lo) : (lo >= bottom and lo <= top ? 1.0 : 0.0)
+                    if portion > 0
+                        array.set(vols, j, array.get(vols,j)+v*portion)
+    if sumVol <= 0
+        warning := label.new(bar_index, high, "NO VOLUME — profile unavailable", style=label.style_label_down, color=color.gray, textcolor=color.white)
+    else
+        peak = 0
+        peakV = array.get(vols,0)
+        for j = 1 to rows-1
+            v = array.get(vols,j)
+            if v > peakV
+                peakV := v
+                peak := j
+        loIdx = peak
+        hiIdx = peak
+        covered = peakV
+        while covered < sumVol*area/100 and (loIdx>0 or hiIdx<rows-1)
+            below = loIdx>0 ? array.get(vols,loIdx-1) : -1.0
+            above = hiIdx<rows-1 ? array.get(vols,hiIdx+1) : -1.0
+            if above > below
+                hiIdx += 1
+                covered += above
+            else
+                loIdx -= 1
+                covered += below
+        maxV = math.max(peakV, 1.0)
+        for j = 0 to rows-1
+            v = array.get(vols,j)
+            barWidth = int(math.max(1.0, math.round(width*v/maxV)))
+            btm = minPx+j*stepPx
+            top = btm+stepPx
+            cl = j >= loIdx and j <= hiIdx ? color.new(color.teal,55) : color.new(color.gray,76)
+            array.push(blocks, box.new(bar_index+2,top,bar_index+2+barWidth,btm, xloc=xloc.bar_index,bgcolor=cl,border_color=color.new(cl,70)))
+        poc = minPx+(peak+0.5)*stepPx
+        vah = minPx+(hiIdx+1)*stepPx
+        val = minPx+loIdx*stepPx
+        pocLine := line.new(bar_index-n+1,poc,bar_index+width+3,poc,color=color.yellow,width=2)
+        vahLine := line.new(bar_index-n+1,vah,bar_index+width+3,vah,color=color.aqua,style=line.style_dashed)
+        valLine := line.new(bar_index-n+1,val,bar_index+width+3,val,color=color.aqua,style=line.style_dashed)
