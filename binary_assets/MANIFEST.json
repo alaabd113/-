@@ -1,0 +1,505 @@
+{
+  "format": 1,
+  "chunk_payload": "base64-encoded binary, not git lfs",
+  "binary_files": [
+    {
+      "path": "data/candles.db",
+      "size": 16363520,
+      "sha256": "6e7472251630c10909e52e545c1ec9f893c50d028004a040a938df8fd7c6bcbe",
+      "transfer_encoding": "xz",
+      "transfer_size": 2101460,
+      "transfer_sha256": "3834178c9d2efec47bf63842fce10d92a75ecee2c04be033eeb0629592d447d8",
+      "chunks": [
+        {
+          "file": "binary_assets/db/candles.db.part001.b64",
+          "size": 420000,
+          "sha256": "5419906e83fcff0226080842d6d72e3d9b975ca52e2314d6331053c8afe04286"
+        },
+        {
+          "file": "binary_assets/db/candles.db.part002.b64",
+          "size": 420000,
+          "sha256": "de1aca8629dbf0e81383c38d991d5ba32ac59994d0c5841f0765337fa72cd67f"
+        },
+        {
+          "file": "binary_assets/db/candles.db.part003.b64",
+          "size": 420000,
+          "sha256": "79d10214f1abc094a0bac09054908f3a28b776ff46018c5d5c7660953b0808f4"
+        },
+        {
+          "file": "binary_assets/db/candles.db.part004.b64",
+          "size": 420000,
+          "sha256": "4b26a6f747b25e96aec6c58eec0c8a769d474e1baa590ba9d64e040e41009b82"
+        },
+        {
+          "file": "binary_assets/db/candles.db.part005.b64",
+          "size": 420000,
+          "sha256": "e66fa236e145dfe0ad987e61e92838d3b3b2a5d8f83dc63066a9313a2285969b"
+        },
+        {
+          "file": "binary_assets/db/candles.db.part006.b64",
+          "size": 1460,
+          "sha256": "e583c28ab51309f740a44326c9da6c0ad564456696d7d4545a09d77cc9713e18"
+        }
+      ]
+    },
+    {
+      "path": "data/candles.db-shm",
+      "size": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "transfer_encoding": "raw",
+      "transfer_size": 32768,
+      "transfer_sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "chunks": [
+        {
+          "file": "binary_assets/db/candles.db-shm.part001.b64",
+          "size": 32768,
+          "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+        }
+      ]
+    },
+    {
+      "path": "data/candles.db-wal",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transfer_encoding": "raw",
+      "transfer_size": 0,
+      "transfer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "chunks": []
+    },
+    {
+      "path": "legacy/GoldStation_Previous_Complete_Project_Quarantined.zip",
+      "size": 35500152,
+      "sha256": "f81a537d7f37e5fbbf94bd2a0d17eec2518ecd4576c2f1481bb27244cbb202a8",
+      "transfer_encoding": "raw",
+      "transfer_size": 35500152,
+      "transfer_sha256": "f81a537d7f37e5fbbf94bd2a0d17eec2518ecd4576c2f1481bb27244cbb202a8",
+      "chunks": [
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part001.b64",
+          "size": 420000,
+          "sha256": "c20c1851c038fd973d2340ca2a97cae854efb67d166f3e428ec625d1fdaee3f1"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part002.b64",
+          "size": 420000,
+          "sha256": "dc97ada133f6cd60f8ca9e1f8125a9b0d024ff055270a1e91910f6f7fc51f22b"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part003.b64",
+          "size": 420000,
+          "sha256": "61a279f791e9fd10515c6c36898afe38fd7a00dbc0f3b55597b80d4938fd7632"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part004.b64",
+          "size": 420000,
+          "sha256": "c65fee3e07a8d01649f4c2c2fdd29a3bc32c094a2262fe95f3126a361e2c928c"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part005.b64",
+          "size": 420000,
+          "sha256": "2a1ba3b4bf4e3435a82e22fe7b7f56d7eccbfe59ec02af1e7d0e5c394d70a01a"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part006.b64",
+          "size": 420000,
+          "sha256": "52eab30169320099259f810bb665cae128c8d4c752c83a7b10930bfe66825206"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part007.b64",
+          "size": 420000,
+          "sha256": "a3aa7dd9a541343dde365370366b8a2d1cc83bc257c65fbc21e566e44f39e3ad"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part008.b64",
+          "size": 420000,
+          "sha256": "5205bc33dd2af35a04e92f469d1ba73582c5d2312f80e6cc654db7900c96aa87"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part009.b64",
+          "size": 420000,
+          "sha256": "cc34be9eb6738749d9a3ce0b952b6cb14cc0f62f027c63e2c85f12cfde12b16e"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part010.b64",
+          "size": 420000,
+          "sha256": "c98d6e273eea4d57ee58f67754862e500539ce9d491db4d78802fb45610eecc3"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part011.b64",
+          "size": 420000,
+          "sha256": "8bdfbd88dcf1c05f4d149155c7e0fe55a9515639f2f0c709ff7916f8754e4950"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part012.b64",
+          "size": 420000,
+          "sha256": "017b4a7d87b5c01ccd9011870cfd08f26465514cb8b3a73af372a3dcecb02ccd"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part013.b64",
+          "size": 420000,
+          "sha256": "9ba1a384fcf35b01bd1274f80abd571d073e80ee12ef9a65c387c9ac10dc64fc"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part014.b64",
+          "size": 420000,
+          "sha256": "2e370004723ea0ef8091cb5f8af32ebacb5f3fe03ceb89ddf5ad2b71de7845c7"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part015.b64",
+          "size": 420000,
+          "sha256": "f98d31c9d7c09c11bd922d99c1e37693a8470f624783c40f1236c6d734d62cc8"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part016.b64",
+          "size": 420000,
+          "sha256": "be092746bd04ff4196b4f2a1a5cdc9bc32ded18d5920d02c7fdc02123f5f8e38"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part017.b64",
+          "size": 420000,
+          "sha256": "bab74760494d6ee7cb96ce78086cad653159a88d133a2b560d842ea7f1b1edd1"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part018.b64",
+          "size": 420000,
+          "sha256": "8ca29ed07abfb5370ee258e605fac94fbbe94772c588ba5afe82b0bba2b7b99f"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part019.b64",
+          "size": 420000,
+          "sha256": "1e1e7271a75a7bd76d0bd31bbd91526aa6b73a02daf70c3628951f6678d152ae"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part020.b64",
+          "size": 420000,
+          "sha256": "8e227e1846bdcd345c937c96c79beea2976cec2649a130e1858b6876400031dc"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part021.b64",
+          "size": 420000,
+          "sha256": "f7c5a54542ddc9338b5ae9b076db051d7a24369bad8f4850a2b67d967283e6cf"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part022.b64",
+          "size": 420000,
+          "sha256": "58c2673f7aa34ee7d20955a35dc14b330677284ccabaccf0e178f4b78d214e8c"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part023.b64",
+          "size": 420000,
+          "sha256": "824e02e2a3f097ba5485a02faae11dfa10b80d21b850d1e0d35dcd0de1eb19f7"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part024.b64",
+          "size": 420000,
+          "sha256": "a867ece8058fa847fa3104a3412d46595370e4af90c3867984254e61bd679a82"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part025.b64",
+          "size": 420000,
+          "sha256": "5aa750575f73de07485e81aa11995a7fcc3a6c1bc27157c15cae7eee3fc326f4"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part026.b64",
+          "size": 420000,
+          "sha256": "a9dc3a74dd385054d404e2792a3412d07c13e2e0094a1af46a2d4f252f29230a"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part027.b64",
+          "size": 420000,
+          "sha256": "a2708206b6dddc49d8daf2b7a3258d5b91c7e5adab9132ecd1a028f819528a7f"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part028.b64",
+          "size": 420000,
+          "sha256": "400f9c803902bf105831e754292d935f0974cdc8119cb796310111601d45f331"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part029.b64",
+          "size": 420000,
+          "sha256": "7db37b13d9dd835d8b6bec5b00d9d95f4a891a4e8cda459961a53425a30d92ef"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part030.b64",
+          "size": 420000,
+          "sha256": "5e405eb5234173c59fa0f4b1703bcb493dacab3f7392a1ac2453fb6c5f83efa5"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part031.b64",
+          "size": 420000,
+          "sha256": "3054570bc7c4c90e7e1a86792d12f7204e9a90b8e3b6c1542108f1ed3bd05b75"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part032.b64",
+          "size": 420000,
+          "sha256": "4a1497e098d5ba7a9cb735df755fa9b8227bbd9185dee527337f54fae74c9196"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part033.b64",
+          "size": 420000,
+          "sha256": "5896b51304467e3d21e0e375b0d4cbd2f893c978c06cf1c57ed92e5ea7a17735"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part034.b64",
+          "size": 420000,
+          "sha256": "9b67213198e48652e8cf38f2fd4a2b55869ce5c1fca9c2ae00b8fa1a8f3041e5"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part035.b64",
+          "size": 420000,
+          "sha256": "29721c26bfe71e557c6c3a43021234a1930a4a8bc49494e72a41b3a194741d8d"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part036.b64",
+          "size": 420000,
+          "sha256": "7efb0204d00413c327a0382ae0df5d3bf9c31d0e8bd6e218d78337e53e0f4cb3"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part037.b64",
+          "size": 420000,
+          "sha256": "73d8bbf29892352bb0f6733bdb60fe39e006efabb6a3e60a0de6e8750b0bb96c"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part038.b64",
+          "size": 420000,
+          "sha256": "2b4022150e6a254603e54998d471cdef0b9d17d32434a83e3aa1b33a04757975"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part039.b64",
+          "size": 420000,
+          "sha256": "7b68aba9f01f786271fabf7a760c8c5f24620f7aa8a2f378786f49f3ac6e3736"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part040.b64",
+          "size": 420000,
+          "sha256": "82d4a17e53b9e2e015c99513e579921a75ce902a161ba90e080942d86470c635"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part041.b64",
+          "size": 420000,
+          "sha256": "7e129ee5ce3a1b3df4c985f5dea8efb74a74d94e77c80ebb388f178f0acf4f21"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part042.b64",
+          "size": 420000,
+          "sha256": "4ac74fe564c23eaf70cd8c9b2e8a29536726c95763454058d384b58b300efe64"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part043.b64",
+          "size": 420000,
+          "sha256": "a7c396eb591de5e1adedd07b1685f868458de77d81c3aaa713f8c4b5b530b3b2"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part044.b64",
+          "size": 420000,
+          "sha256": "e71ef38e623064bcc1e33adbc1684007091f6d7b802ee39af0a3f96b54d5f92c"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part045.b64",
+          "size": 420000,
+          "sha256": "b92a0b4b9d017e37da00a48f223b32ca4fe9e835aac19a373983062bc69c4cfe"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part046.b64",
+          "size": 420000,
+          "sha256": "252fcba1f78fc4c5c59cf3106082750952756262c064de7c55748ec2f5d94d66"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part047.b64",
+          "size": 420000,
+          "sha256": "d0b3113ca36775002a6a671578707f920067ab9c7b6b4d699dfbe632490fc0b3"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part048.b64",
+          "size": 420000,
+          "sha256": "f2c44f808c97c04a10df91aedbbb450b7a8bf740cbf40f6bf4b772ac23cf71b8"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part049.b64",
+          "size": 420000,
+          "sha256": "7f12ae13711531861513d6c0bc7de089d8d486397673573acafadd2fd31ad9f9"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part050.b64",
+          "size": 420000,
+          "sha256": "071d4db64f99740fe47d90f68dac0acfec90b1004d8cbf541138249d49296ca7"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part051.b64",
+          "size": 420000,
+          "sha256": "8db73ffd6822480a084d1b875b77044d7a3479b03dd73dbeddf7acaaf7537458"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part052.b64",
+          "size": 420000,
+          "sha256": "31b277cdbc1bf155437693f31b39c85682e0c9eefcb9249d14bf70d73bfb9446"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part053.b64",
+          "size": 420000,
+          "sha256": "480572a46b617927591c5de21ad607db436b2fa5a14fe5a12dccfd3011ef6b22"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part054.b64",
+          "size": 420000,
+          "sha256": "b637b46dd48eddc55e80ba30976b42c0736508a90d8edc9f2346944e26c378b6"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part055.b64",
+          "size": 420000,
+          "sha256": "c4e6c18c5de47f2b37ee3522e43fbb964ca7123f1a8fddb6db303889b7ef6ebe"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part056.b64",
+          "size": 420000,
+          "sha256": "c6fbc386d09d9846c1423249e4612b206d4f2c0b211e7bad0e6390f9d1f87c25"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part057.b64",
+          "size": 420000,
+          "sha256": "a1a762a3ef5e2883b2df888c76c49beb6ff7d2ac76e9b66324fc165c95641730"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part058.b64",
+          "size": 420000,
+          "sha256": "20804bb45f123266b307de445dc980afe6c73f331e0502da824e0f29e376c69d"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part059.b64",
+          "size": 420000,
+          "sha256": "863da680473b568e2973ab64070bf5d4cd1623078493df46d98213d6f01c52fd"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part060.b64",
+          "size": 420000,
+          "sha256": "d5e1dc3172ab026ffd131f1fa7309d2f891e9f61bfdd33c3153faec42683a720"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part061.b64",
+          "size": 420000,
+          "sha256": "8cc95f2ce87ab61f26336de0230db70652d234bf7d314a3206a62a7293cebc52"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part062.b64",
+          "size": 420000,
+          "sha256": "4987a1a2bfd1fe3175ab4ca7db918ddd265ada27e59aba3208bf99f2f4e25b22"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part063.b64",
+          "size": 420000,
+          "sha256": "81d1a0a2e2cf5e0f30ab44b393a6889a5eb467e63fc454e6e41dec749fad309b"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part064.b64",
+          "size": 420000,
+          "sha256": "4ff6a57d4183c0da3664680765bb0312de1ecef2e552560e99a0d1f1cead94c7"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part065.b64",
+          "size": 420000,
+          "sha256": "6fd094afa3a56a84da7b79c6cd76da80670324a0aa6050935683e085f3db6bcf"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part066.b64",
+          "size": 420000,
+          "sha256": "6d803cb2d389c5377e3f5ab03f8ba716ae295828d4458e6f42c630a8e800bb0d"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part067.b64",
+          "size": 420000,
+          "sha256": "900d125bdba119d93d4574c7ca7701097108dae7e661c14588c01e76bf615606"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part068.b64",
+          "size": 420000,
+          "sha256": "9e209c16833b051466093f7c745b1b5839f13fb7b40b1d90cee271afdf640658"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part069.b64",
+          "size": 420000,
+          "sha256": "9489683a127874ac61fbe81de25c6f895c01e80d3247adb1ae65c3ad15b44c3f"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part070.b64",
+          "size": 420000,
+          "sha256": "0cc11062ddf6436b089a13360a10b9d08c60bb808146d28b1e0e478d71cb8581"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part071.b64",
+          "size": 420000,
+          "sha256": "6ba5b83e5a26fed5131105bc735e11cd2d3c55bde49d614d0a20569ba5327c26"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part072.b64",
+          "size": 420000,
+          "sha256": "19eeb37d49fdac1d2fb798277ac06850a004f3c3f641e6d0ebd51be63933d208"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part073.b64",
+          "size": 420000,
+          "sha256": "dc26a2180eb70b913594488776403c5aa34b5239f3c58b1ba9c145faa2ec53e1"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part074.b64",
+          "size": 420000,
+          "sha256": "c69abb7cf09adcdcb8ea497f5d5d1ef6a94b53cee497d46a9782a5b57d1392b5"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part075.b64",
+          "size": 420000,
+          "sha256": "6ada24f4bd9f2e3aba38db2379c004f3c1d42fd374d28bf038a260ad5fb3bc1b"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part076.b64",
+          "size": 420000,
+          "sha256": "1e9bb37cf0671ae1dc5a88f3b4c3c672249ee831ffaf3a42a2668e486a221136"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part077.b64",
+          "size": 420000,
+          "sha256": "5e6687f5ddc0de8fc32467fe8a1e38027eb75fc74c16e939cab9c1e2da95f28c"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part078.b64",
+          "size": 420000,
+          "sha256": "5859f5610865fd572b288e517238ce192cc4ade5a54785d9e626195e19d7d830"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part079.b64",
+          "size": 420000,
+          "sha256": "2406aadc69392a2fe54d9b4a022de810f5abdcad12a53b08a68c8084c006feda"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part080.b64",
+          "size": 420000,
+          "sha256": "76f8e392a2039e828f56fc5666dfff68e7f8f285ef62a321d1a321a0f3b0cf4e"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part081.b64",
+          "size": 420000,
+          "sha256": "d9b8c5bd3c0dfa8e7fbdf2dfd821a717c4e56f9e8aee68772d391a0ad77ee379"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part082.b64",
+          "size": 420000,
+          "sha256": "3857fc48f4bd6d1c33ae2d338c65b9c80cbc42f34cebed2034902e47baceedd2"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part083.b64",
+          "size": 420000,
+          "sha256": "f61a4dc3230446e207fa092b5456cb73d1fdeed87978775125dbeb0df3265f53"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part084.b64",
+          "size": 420000,
+          "sha256": "fb41603f31d885bb163b49291faa950838866e371f3389d14807f4baebed66e4"
+        },
+        {
+          "file": "binary_assets/legacy/GoldStation_Previous_Complete_Project_Quarantined.zip.part085.b64",
+          "size": 220152,
+          "sha256": "723964f7a34d7946c0a41a65cf6ed4e9eddfb0a8b877a124e2cb8138e1b76535"
+        }
+      ]
+    }
+  ]
+}
