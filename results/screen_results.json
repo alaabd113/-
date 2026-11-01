@@ -1,0 +1,2157 @@
+{
+  "created_utc": "2026-11-01T00:55:21.562472+00:00",
+  "source_db_sha256": "8a39bd951846ca6a621ec6f3d966fd7be95b6c45067e0664ae364a73565a1781",
+  "framework": "independent mechanical adaptations, NOT byte-for-byte Github code",
+  "risk_policy": "max stop USD-price 10 intraday, 25 H1, 60 H4; fixed-cost USD-price per round-trip",
+  "data": {
+    "15min": {
+      "bars": 5729,
+      "first": "2026-08-05 05:00:00",
+      "last": "2026-10-30 13:30:00",
+      "median_delta_minutes": 15.0,
+      "nonpositive": 0,
+      "invalid_ohlc": 0,
+      "source_counts": {
+        "ctrader": 5729
+      }
+    },
+    "1h": {
+      "bars": 5176,
+      "first": "2025-12-15 07:00:00",
+      "last": "2026-10-30 12:00:00",
+      "median_delta_minutes": 60.0,
+      "nonpositive": 0,
+      "invalid_ohlc": 0,
+      "source_counts": {
+        "ctrader": 5176
+      }
+    },
+    "4h": {
+      "bars": 5045,
+      "first": "2023-07-28 04:00:00",
+      "last": "2026-10-30 08:00:00",
+      "median_delta_minutes": 240.0,
+      "nonpositive": 0,
+      "invalid_ohlc": 0,
+      "source_counts": {
+        "ctrader": 5045
+      }
+    },
+    "5min": {
+      "bars": 7190,
+      "first": "2026-09-24 12:35:00",
+      "last": "2026-10-30 13:40:00",
+      "median_delta_minutes": 5.0,
+      "nonpositive": 0,
+      "invalid_ohlc": 0,
+      "source_counts": {
+        "ctrader": 7190
+      }
+    }
+  },
+  "results": {
+    "EMA20_RSI_CROSS_M15": {
+      "timeframe": "15min",
+      "repository_reference": "Aniket-Jaiswal2002/xauusd-trading-bot",
+      "method": "rule-adaptation not original EA",
+      "caveat": "EMA RSI crossover independent rules",
+      "bars": 5729,
+      "costs": {
+        "0.4": {
+          "trades": 23,
+          "win_rate": 0.3043,
+          "total_R": -4.4506,
+          "avg_R": -0.1935,
+          "PF": 0.734,
+          "max_DD_R": 9.39,
+          "early_65pct": {
+            "trades": 11,
+            "win_rate": 0.0909,
+            "total_R": -8.6744,
+            "avg_R": -0.7886,
+            "PF": 0.168,
+            "max_DD_R": 9.39
+          },
+          "late_35pct": {
+            "trades": 12,
+            "win_rate": 0.5,
+            "total_R": 4.2238,
+            "avg_R": 0.352,
+            "PF": 1.671,
+            "max_DD_R": 4.202
+          },
+          "rejected": 80,
+          "signal_candidates": 106
+        },
+        "1.0": {
+          "trades": 23,
+          "win_rate": 0.3043,
+          "total_R": -6.0265,
+          "avg_R": -0.262,
+          "PF": 0.662,
+          "max_DD_R": 9.975,
+          "early_65pct": {
+            "trades": 11,
+            "win_rate": 0.0909,
+            "total_R": -9.386,
+            "avg_R": -0.8533,
+            "PF": 0.153,
+            "max_DD_R": 9.975
+          },
+          "late_35pct": {
+            "trades": 12,
+            "win_rate": 0.5,
+            "total_R": 3.3595,
+            "avg_R": 0.28,
+            "PF": 1.5,
+            "max_DD_R": 4.504
+          },
+          "rejected": 80,
+          "signal_candidates": 106
+        },
+        "2.0": {
+          "trades": 23,
+          "win_rate": 0.3043,
+          "total_R": -8.653,
+          "avg_R": -0.3762,
+          "PF": 0.559,
+          "max_DD_R": 10.95,
+          "early_65pct": {
+            "trades": 11,
+            "win_rate": 0.0909,
+            "total_R": -10.572,
+            "avg_R": -0.9611,
+            "PF": 0.131,
+            "max_DD_R": 10.95
+          },
+          "late_35pct": {
+            "trades": 12,
+            "win_rate": 0.5,
+            "total_R": 1.919,
+            "avg_R": 0.1599,
+            "PF": 1.258,
+            "max_DD_R": 5.009
+          },
+          "rejected": 80,
+          "signal_candidates": 106
+        }
+      }
+    },
+    "HA_RSI_CROSS_M5": {
+      "timeframe": "5min",
+      "repository_reference": "manishsolanki1703/XAUUSD-Strategy",
+      "method": "rule-adaptation not original EA",
+      "caveat": "HA RSI adaptation",
+      "bars": 7190,
+      "costs": {
+        "0.4": {
+          "trades": 241,
+          "win_rate": 0.361,
+          "total_R": -20.9474,
+          "avg_R": -0.0869,
+          "PF": 0.875,
+          "max_DD_R": 32.92,
+          "early_65pct": {
+            "trades": 142,
+            "win_rate": 0.3239,
+            "total_R": -28.0389,
+            "avg_R": -0.1975,
+            "PF": 0.731,
+            "max_DD_R": 28.683
+          },
+          "late_35pct": {
+            "trades": 99,
+            "win_rate": 0.4141,
+            "total_R": 7.0914,
+            "avg_R": 0.0716,
+            "PF": 1.113,
+            "max_DD_R": 9.794
+          },
+          "rejected": 8,
+          "signal_candidates": 427
+        },
+        "1.0": {
+          "trades": 241,
+          "win_rate": 0.361,
+          "total_R": -50.2886,
+          "avg_R": -0.2087,
+          "PF": 0.729,
+          "max_DD_R": 54.117,
+          "early_65pct": {
+            "trades": 142,
+            "win_rate": 0.3239,
+            "total_R": -45.3261,
+            "avg_R": -0.3192,
+            "PF": 0.609,
+            "max_DD_R": 45.478
+          },
+          "late_35pct": {
+            "trades": 99,
+            "win_rate": 0.4141,
+            "total_R": -4.9625,
+            "avg_R": -0.0501,
+            "PF": 0.929,
+            "max_DD_R": 11.586
+          },
+          "rejected": 8,
+          "signal_candidates": 427
+        },
+        "2.0": {
+          "trades": 241,
+          "win_rate": 0.361,
+          "total_R": -99.1905,
+          "avg_R": -0.4116,
+          "PF": 0.543,
+          "max_DD_R": 100.976,
+          "early_65pct": {
+            "trades": 142,
+            "win_rate": 0.3239,
+            "total_R": -74.1382,
+            "avg_R": -0.5221,
+            "PF": 0.452,
+            "max_DD_R": 74.169
+          },
+          "late_35pct": {
+            "trades": 99,
+            "win_rate": 0.4141,
+            "total_R": -25.0523,
+            "avg_R": -0.2531,
+            "PF": 0.693,
+            "max_DD_R": 28.159
+          },
+          "rejected": 8,
+          "signal_candidates": 427
+        }
+      }
+    },
+    "TRIPLE_CONFIRM_M15": {
+      "timeframe": "15min",
+      "repository_reference": "Turnipnator/Oanda_Gold",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Triple confirmation variant",
+      "bars": 5729,
+      "costs": {
+        "0.4": {
+          "trades": 171,
+          "win_rate": 0.3918,
+          "total_R": 7.2434,
+          "avg_R": 0.0424,
+          "PF": 1.066,
+          "max_DD_R": 16.182,
+          "early_65pct": {
+            "trades": 83,
+            "win_rate": 0.3614,
+            "total_R": -2.9991,
+            "avg_R": -0.0361,
+            "PF": 0.946,
+            "max_DD_R": 12.494
+          },
+          "late_35pct": {
+            "trades": 88,
+            "win_rate": 0.4205,
+            "total_R": 10.2425,
+            "avg_R": 0.1164,
+            "PF": 1.191,
+            "max_DD_R": 10.591
+          },
+          "rejected": 218,
+          "signal_candidates": 566
+        },
+        "1.0": {
+          "trades": 171,
+          "win_rate": 0.3918,
+          "total_R": -5.5708,
+          "avg_R": -0.0326,
+          "PF": 0.952,
+          "max_DD_R": 21.254,
+          "early_65pct": {
+            "trades": 83,
+            "win_rate": 0.3614,
+            "total_R": -8.8045,
+            "avg_R": -0.1061,
+            "PF": 0.852,
+            "max_DD_R": 14.434
+          },
+          "late_35pct": {
+            "trades": 88,
+            "win_rate": 0.4205,
+            "total_R": 3.2337,
+            "avg_R": 0.0367,
+            "PF": 1.056,
+            "max_DD_R": 12.225
+          },
+          "rejected": 218,
+          "signal_candidates": 566
+        },
+        "2.0": {
+          "trades": 171,
+          "win_rate": 0.3918,
+          "total_R": -26.9278,
+          "avg_R": -0.1575,
+          "PF": 0.793,
+          "max_DD_R": 32.377,
+          "early_65pct": {
+            "trades": 83,
+            "win_rate": 0.3614,
+            "total_R": -18.4803,
+            "avg_R": -0.2227,
+            "PF": 0.718,
+            "max_DD_R": 20.337
+          },
+          "late_35pct": {
+            "trades": 88,
+            "win_rate": 0.4205,
+            "total_R": -8.4475,
+            "avg_R": -0.096,
+            "PF": 0.869,
+            "max_DD_R": 16.649
+          },
+          "rejected": 218,
+          "signal_candidates": 566
+        }
+      }
+    },
+    "EMA9_RSI_CROSS_M5": {
+      "timeframe": "5min",
+      "repository_reference": "TLBSimon/Funded_EMA_RSI_ATR_EA",
+      "method": "rule-adaptation not original EA",
+      "caveat": "EMA RSI cross adaptation",
+      "bars": 7190,
+      "costs": {
+        "0.4": {
+          "trades": 167,
+          "win_rate": 0.3832,
+          "total_R": -7.3341,
+          "avg_R": -0.0439,
+          "PF": 0.934,
+          "max_DD_R": 18.248,
+          "early_65pct": {
+            "trades": 94,
+            "win_rate": 0.4043,
+            "total_R": -0.2344,
+            "avg_R": -0.0025,
+            "PF": 0.996,
+            "max_DD_R": 9.322
+          },
+          "late_35pct": {
+            "trades": 73,
+            "win_rate": 0.3562,
+            "total_R": -7.0998,
+            "avg_R": -0.0973,
+            "PF": 0.857,
+            "max_DD_R": 18.248
+          },
+          "rejected": 11,
+          "signal_candidates": 228
+        },
+        "1.0": {
+          "trades": 167,
+          "win_rate": 0.3832,
+          "total_R": -25.688,
+          "avg_R": -0.1538,
+          "PF": 0.788,
+          "max_DD_R": 29.974,
+          "early_65pct": {
+            "trades": 94,
+            "win_rate": 0.4043,
+            "total_R": -10.5948,
+            "avg_R": -0.1127,
+            "PF": 0.841,
+            "max_DD_R": 15.546
+          },
+          "late_35pct": {
+            "trades": 73,
+            "win_rate": 0.3562,
+            "total_R": -15.0932,
+            "avg_R": -0.2068,
+            "PF": 0.724,
+            "max_DD_R": 23.481
+          },
+          "rejected": 11,
+          "signal_candidates": 228
+        },
+        "2.0": {
+          "trades": 167,
+          "win_rate": 0.3772,
+          "total_R": -56.2777,
+          "avg_R": -0.337,
+          "PF": 0.597,
+          "max_DD_R": 59.601,
+          "early_65pct": {
+            "trades": 94,
+            "win_rate": 0.3936,
+            "total_R": -27.8622,
+            "avg_R": -0.2964,
+            "PF": 0.637,
+            "max_DD_R": 29.928
+          },
+          "late_35pct": {
+            "trades": 73,
+            "win_rate": 0.3562,
+            "total_R": -28.4155,
+            "avg_R": -0.3893,
+            "PF": 0.55,
+            "max_DD_R": 34.379
+          },
+          "rejected": 11,
+          "signal_candidates": 228
+        }
+      }
+    },
+    "MACD_EMA_M15": {
+      "timeframe": "15min",
+      "repository_reference": "devadarshan-20/QuantEdge-XAUUSD",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Explainable EMA MACD score subset",
+      "bars": 5729,
+      "costs": {
+        "0.4": {
+          "trades": 15,
+          "win_rate": 0.3333,
+          "total_R": -1.6921,
+          "avg_R": -0.1128,
+          "PF": 0.838,
+          "max_DD_R": 4.178,
+          "early_65pct": {
+            "trades": 3,
+            "win_rate": 0.3333,
+            "total_R": -0.324,
+            "avg_R": -0.108,
+            "PF": 0.844,
+            "max_DD_R": 2.083
+          },
+          "late_35pct": {
+            "trades": 12,
+            "win_rate": 0.3333,
+            "total_R": -1.368,
+            "avg_R": -0.114,
+            "PF": 0.837,
+            "max_DD_R": 4.178
+          },
+          "rejected": 152,
+          "signal_candidates": 174
+        },
+        "1.0": {
+          "trades": 15,
+          "win_rate": 0.3333,
+          "total_R": -2.7302,
+          "avg_R": -0.182,
+          "PF": 0.755,
+          "max_DD_R": 4.445,
+          "early_65pct": {
+            "trades": 3,
+            "win_rate": 0.3333,
+            "total_R": -0.5101,
+            "avg_R": -0.17,
+            "PF": 0.769,
+            "max_DD_R": 2.207
+          },
+          "late_35pct": {
+            "trades": 12,
+            "win_rate": 0.3333,
+            "total_R": -2.22,
+            "avg_R": -0.185,
+            "PF": 0.752,
+            "max_DD_R": 4.445
+          },
+          "rejected": 152,
+          "signal_candidates": 174
+        },
+        "2.0": {
+          "trades": 15,
+          "win_rate": 0.3333,
+          "total_R": -4.4603,
+          "avg_R": -0.2974,
+          "PF": 0.637,
+          "max_DD_R": 4.889,
+          "early_65pct": {
+            "trades": 3,
+            "win_rate": 0.3333,
+            "total_R": -0.8202,
+            "avg_R": -0.2734,
+            "PF": 0.66,
+            "max_DD_R": 2.414
+          },
+          "late_35pct": {
+            "trades": 12,
+            "win_rate": 0.3333,
+            "total_R": -3.6401,
+            "avg_R": -0.3033,
+            "PF": 0.632,
+            "max_DD_R": 4.889
+          },
+          "rejected": 152,
+          "signal_candidates": 174
+        }
+      }
+    },
+    "ADX_DI_EMA_M5": {
+      "timeframe": "5min",
+      "repository_reference": "AhsanAli013/MT5-XAUUSD-Scalping-EA",
+      "method": "rule-adaptation not original EA",
+      "caveat": "EMA ADX direction variant",
+      "bars": 7190,
+      "costs": {
+        "0.4": {
+          "trades": 92,
+          "win_rate": 0.3804,
+          "total_R": -4.9659,
+          "avg_R": -0.054,
+          "PF": 0.916,
+          "max_DD_R": 12.428,
+          "early_65pct": {
+            "trades": 55,
+            "win_rate": 0.4182,
+            "total_R": 1.6049,
+            "avg_R": 0.0292,
+            "PF": 1.05,
+            "max_DD_R": 9.492
+          },
+          "late_35pct": {
+            "trades": 37,
+            "win_rate": 0.3243,
+            "total_R": -6.5708,
+            "avg_R": -0.1776,
+            "PF": 0.756,
+            "max_DD_R": 8.697
+          },
+          "rejected": 10,
+          "signal_candidates": 110
+        },
+        "1.0": {
+          "trades": 92,
+          "win_rate": 0.3804,
+          "total_R": -14.7086,
+          "avg_R": -0.1599,
+          "PF": 0.775,
+          "max_DD_R": 19.202,
+          "early_65pct": {
+            "trades": 55,
+            "win_rate": 0.4182,
+            "total_R": -4.1198,
+            "avg_R": -0.0749,
+            "PF": 0.884,
+            "max_DD_R": 11.44
+          },
+          "late_35pct": {
+            "trades": 37,
+            "win_rate": 0.3243,
+            "total_R": -10.5888,
+            "avg_R": -0.2862,
+            "PF": 0.645,
+            "max_DD_R": 11.842
+          },
+          "rejected": 10,
+          "signal_candidates": 110
+        },
+        "2.0": {
+          "trades": 92,
+          "win_rate": 0.3696,
+          "total_R": -30.9465,
+          "avg_R": -0.3364,
+          "PF": 0.592,
+          "max_DD_R": 34.533,
+          "early_65pct": {
+            "trades": 55,
+            "win_rate": 0.4,
+            "total_R": -13.661,
+            "avg_R": -0.2484,
+            "PF": 0.668,
+            "max_DD_R": 18.505
+          },
+          "late_35pct": {
+            "trades": 37,
+            "win_rate": 0.3243,
+            "total_R": -17.2855,
+            "avg_R": -0.4672,
+            "PF": 0.501,
+            "max_DD_R": 17.622
+          },
+          "rejected": 10,
+          "signal_candidates": 110
+        }
+      }
+    },
+    "BOLL_RSI_FADE_M5": {
+      "timeframe": "5min",
+      "repository_reference": "HillaryMurimi/mt5-gold-ai-trader",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Simplified no-ML mean reversion",
+      "bars": 7190,
+      "costs": {
+        "0.4": {
+          "trades": 141,
+          "win_rate": 0.4681,
+          "total_R": 31.4211,
+          "avg_R": 0.2228,
+          "PF": 1.397,
+          "max_DD_R": 13.784,
+          "early_65pct": {
+            "trades": 97,
+            "win_rate": 0.4227,
+            "total_R": 10.7837,
+            "avg_R": 0.1112,
+            "PF": 1.185,
+            "max_DD_R": 13.784
+          },
+          "late_35pct": {
+            "trades": 44,
+            "win_rate": 0.5682,
+            "total_R": 20.6374,
+            "avg_R": 0.469,
+            "PF": 1.994,
+            "max_DD_R": 4.367
+          },
+          "rejected": 17,
+          "signal_candidates": 229
+        },
+        "1.0": {
+          "trades": 141,
+          "win_rate": 0.4681,
+          "total_R": 14.8456,
+          "avg_R": 0.1053,
+          "PF": 1.169,
+          "max_DD_R": 16.414,
+          "early_65pct": {
+            "trades": 97,
+            "win_rate": 0.4227,
+            "total_R": -0.0662,
+            "avg_R": -0.0007,
+            "PF": 0.999,
+            "max_DD_R": 16.414
+          },
+          "late_35pct": {
+            "trades": 44,
+            "win_rate": 0.5682,
+            "total_R": 14.9118,
+            "avg_R": 0.3389,
+            "PF": 1.638,
+            "max_DD_R": 4.952
+          },
+          "rejected": 17,
+          "signal_candidates": 229
+        },
+        "2.0": {
+          "trades": 141,
+          "win_rate": 0.4681,
+          "total_R": -12.7803,
+          "avg_R": -0.0906,
+          "PF": 0.875,
+          "max_DD_R": 27.065,
+          "early_65pct": {
+            "trades": 97,
+            "win_rate": 0.4227,
+            "total_R": -18.1494,
+            "avg_R": -0.1871,
+            "PF": 0.757,
+            "max_DD_R": 27.065
+          },
+          "late_35pct": {
+            "trades": 44,
+            "win_rate": 0.5682,
+            "total_R": 5.3691,
+            "avg_R": 0.122,
+            "PF": 1.193,
+            "max_DD_R": 6.291
+          },
+          "rejected": 17,
+          "signal_candidates": 229
+        }
+      }
+    },
+    "ATR_COMPRESSION_M5": {
+      "timeframe": "5min",
+      "repository_reference": "P1Piyush/XAUUSD-Trading-Bots",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Mechanical volatility expansion proxy",
+      "bars": 7190,
+      "costs": {
+        "0.4": {
+          "trades": 0,
+          "win_rate": null,
+          "total_R": 0,
+          "avg_R": null,
+          "PF": null,
+          "max_DD_R": null,
+          "early_65pct": {
+            "trades": 0,
+            "win_rate": null,
+            "total_R": 0,
+            "avg_R": null,
+            "PF": null,
+            "max_DD_R": null
+          },
+          "late_35pct": {
+            "trades": 0,
+            "win_rate": null,
+            "total_R": 0,
+            "avg_R": null,
+            "PF": null,
+            "max_DD_R": null
+          },
+          "rejected": 0,
+          "signal_candidates": 0
+        },
+        "1.0": {
+          "trades": 0,
+          "win_rate": null,
+          "total_R": 0,
+          "avg_R": null,
+          "PF": null,
+          "max_DD_R": null,
+          "early_65pct": {
+            "trades": 0,
+            "win_rate": null,
+            "total_R": 0,
+            "avg_R": null,
+            "PF": null,
+            "max_DD_R": null
+          },
+          "late_35pct": {
+            "trades": 0,
+            "win_rate": null,
+            "total_R": 0,
+            "avg_R": null,
+            "PF": null,
+            "max_DD_R": null
+          },
+          "rejected": 0,
+          "signal_candidates": 0
+        },
+        "2.0": {
+          "trades": 0,
+          "win_rate": null,
+          "total_R": 0,
+          "avg_R": null,
+          "PF": null,
+          "max_DD_R": null,
+          "early_65pct": {
+            "trades": 0,
+            "win_rate": null,
+            "total_R": 0,
+            "avg_R": null,
+            "PF": null,
+            "max_DD_R": null
+          },
+          "late_35pct": {
+            "trades": 0,
+            "win_rate": null,
+            "total_R": 0,
+            "avg_R": null,
+            "PF": null,
+            "max_DD_R": null
+          },
+          "rejected": 0,
+          "signal_candidates": 0
+        }
+      }
+    },
+    "DONCHIAN20_H1": {
+      "timeframe": "1h",
+      "repository_reference": "NziCode/mt5-trading-bots",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Donchian 20 independent hypothesis",
+      "bars": 5176,
+      "costs": {
+        "0.4": {
+          "trades": 9,
+          "win_rate": 0.7778,
+          "total_R": 10.4472,
+          "avg_R": 1.1608,
+          "PF": 6.136,
+          "max_DD_R": 1.018,
+          "early_65pct": {
+            "trades": 3,
+            "win_rate": 1.0,
+            "total_R": 5.3506,
+            "avg_R": 1.7835,
+            "PF": null,
+            "max_DD_R": 0.0
+          },
+          "late_35pct": {
+            "trades": 6,
+            "win_rate": 0.6667,
+            "total_R": 5.0967,
+            "avg_R": 0.8494,
+            "PF": 3.505,
+            "max_DD_R": 1.018
+          },
+          "rejected": 326,
+          "signal_candidates": 352
+        },
+        "1.0": {
+          "trades": 9,
+          "win_rate": 0.7778,
+          "total_R": 10.2181,
+          "avg_R": 1.1353,
+          "PF": 5.899,
+          "max_DD_R": 1.044,
+          "early_65pct": {
+            "trades": 3,
+            "win_rate": 1.0,
+            "total_R": 5.2764,
+            "avg_R": 1.7588,
+            "PF": null,
+            "max_DD_R": 0.0
+          },
+          "late_35pct": {
+            "trades": 6,
+            "win_rate": 0.6667,
+            "total_R": 4.9417,
+            "avg_R": 0.8236,
+            "PF": 3.369,
+            "max_DD_R": 1.044
+          },
+          "rejected": 326,
+          "signal_candidates": 352
+        },
+        "2.0": {
+          "trades": 9,
+          "win_rate": 0.7778,
+          "total_R": 9.8362,
+          "avg_R": 1.0929,
+          "PF": 5.53,
+          "max_DD_R": 1.088,
+          "early_65pct": {
+            "trades": 3,
+            "win_rate": 1.0,
+            "total_R": 5.1528,
+            "avg_R": 1.7176,
+            "PF": null,
+            "max_DD_R": 0.0
+          },
+          "late_35pct": {
+            "trades": 6,
+            "win_rate": 0.6667,
+            "total_R": 4.6834,
+            "avg_R": 0.7806,
+            "PF": 3.157,
+            "max_DD_R": 1.088
+          },
+          "rejected": 326,
+          "signal_candidates": 352
+        }
+      }
+    },
+    "DONCHIAN55_H4": {
+      "timeframe": "4h",
+      "repository_reference": "fsabiu/Trading-GoldFutures",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Turtle family independent hypothesis",
+      "bars": 5045,
+      "costs": {
+        "0.4": {
+          "trades": 68,
+          "win_rate": 0.4265,
+          "total_R": 11.964,
+          "avg_R": 0.1759,
+          "PF": 1.308,
+          "max_DD_R": 6.057,
+          "early_65pct": {
+            "trades": 65,
+            "win_rate": 0.4154,
+            "total_R": 9.3891,
+            "avg_R": 0.1444,
+            "PF": 1.248,
+            "max_DD_R": 6.057
+          },
+          "late_35pct": {
+            "trades": 3,
+            "win_rate": 0.6667,
+            "total_R": 2.5748,
+            "avg_R": 0.8583,
+            "PF": 3.551,
+            "max_DD_R": 1.009
+          },
+          "rejected": 86,
+          "signal_candidates": 253
+        },
+        "1.0": {
+          "trades": 68,
+          "win_rate": 0.4265,
+          "total_R": 10.4817,
+          "avg_R": 0.1541,
+          "PF": 1.264,
+          "max_DD_R": 6.142,
+          "early_65pct": {
+            "trades": 65,
+            "win_rate": 0.4154,
+            "total_R": 7.9445,
+            "avg_R": 0.1222,
+            "PF": 1.205,
+            "max_DD_R": 6.142
+          },
+          "late_35pct": {
+            "trades": 3,
+            "win_rate": 0.6667,
+            "total_R": 2.5371,
+            "avg_R": 0.8457,
+            "PF": 3.478,
+            "max_DD_R": 1.024
+          },
+          "rejected": 86,
+          "signal_candidates": 253
+        },
+        "2.0": {
+          "trades": 68,
+          "win_rate": 0.4265,
+          "total_R": 8.0111,
+          "avg_R": 0.1178,
+          "PF": 1.195,
+          "max_DD_R": 6.284,
+          "early_65pct": {
+            "trades": 65,
+            "win_rate": 0.4154,
+            "total_R": 5.5369,
+            "avg_R": 0.0852,
+            "PF": 1.138,
+            "max_DD_R": 6.284
+          },
+          "late_35pct": {
+            "trades": 3,
+            "win_rate": 0.6667,
+            "total_R": 2.4742,
+            "avg_R": 0.8247,
+            "PF": 3.362,
+            "max_DD_R": 1.047
+          },
+          "rejected": 86,
+          "signal_candidates": 253
+        }
+      }
+    },
+    "ROC_EMA_H1": {
+      "timeframe": "1h",
+      "repository_reference": "Amirgh23/gold-trading-bot",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Momentum adaptation",
+      "bars": 5176,
+      "costs": {
+        "0.4": {
+          "trades": 65,
+          "win_rate": 0.3538,
+          "total_R": -3.1746,
+          "avg_R": -0.0488,
+          "PF": 0.926,
+          "max_DD_R": 12.02,
+          "early_65pct": {
+            "trades": 23,
+            "win_rate": 0.4783,
+            "total_R": 7.4493,
+            "avg_R": 0.3239,
+            "PF": 1.612,
+            "max_DD_R": 3.291
+          },
+          "late_35pct": {
+            "trades": 42,
+            "win_rate": 0.2857,
+            "total_R": -10.6239,
+            "avg_R": -0.2529,
+            "PF": 0.656,
+            "max_DD_R": 12.02
+          },
+          "rejected": 131,
+          "signal_candidates": 233
+        },
+        "1.0": {
+          "trades": 65,
+          "win_rate": 0.3538,
+          "total_R": -4.6985,
+          "avg_R": -0.0723,
+          "PF": 0.893,
+          "max_DD_R": 12.949,
+          "early_65pct": {
+            "trades": 23,
+            "win_rate": 0.4783,
+            "total_R": 6.9232,
+            "avg_R": 0.301,
+            "PF": 1.556,
+            "max_DD_R": 3.427
+          },
+          "late_35pct": {
+            "trades": 42,
+            "win_rate": 0.2857,
+            "total_R": -11.6217,
+            "avg_R": -0.2767,
+            "PF": 0.632,
+            "max_DD_R": 12.949
+          },
+          "rejected": 131,
+          "signal_candidates": 233
+        },
+        "2.0": {
+          "trades": 65,
+          "win_rate": 0.3538,
+          "total_R": -7.2383,
+          "avg_R": -0.1114,
+          "PF": 0.842,
+          "max_DD_R": 14.497,
+          "early_65pct": {
+            "trades": 23,
+            "win_rate": 0.4783,
+            "total_R": 6.0464,
+            "avg_R": 0.2629,
+            "PF": 1.469,
+            "max_DD_R": 3.655
+          },
+          "late_35pct": {
+            "trades": 42,
+            "win_rate": 0.2857,
+            "total_R": -13.2848,
+            "avg_R": -0.3163,
+            "PF": 0.595,
+            "max_DD_R": 14.497
+          },
+          "rejected": 131,
+          "signal_candidates": 233
+        }
+      }
+    },
+    "ZSCORE_H1": {
+      "timeframe": "1h",
+      "repository_reference": "blaster3618/Auri-GOLD",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Mean reversion hypothesis",
+      "bars": 5176,
+      "costs": {
+        "0.4": {
+          "trades": 17,
+          "win_rate": 0.2353,
+          "total_R": -6.3508,
+          "avg_R": -0.3736,
+          "PF": 0.489,
+          "max_DD_R": 6.351,
+          "early_65pct": {
+            "trades": 5,
+            "win_rate": 0.4,
+            "total_R": -0.535,
+            "avg_R": -0.107,
+            "PF": 0.825,
+            "max_DD_R": 2.32
+          },
+          "late_35pct": {
+            "trades": 12,
+            "win_rate": 0.1667,
+            "total_R": -5.8158,
+            "avg_R": -0.4847,
+            "PF": 0.38,
+            "max_DD_R": 5.816
+          },
+          "rejected": 10,
+          "signal_candidates": 31
+        },
+        "1.0": {
+          "trades": 17,
+          "win_rate": 0.2353,
+          "total_R": -6.7664,
+          "avg_R": -0.398,
+          "PF": 0.47,
+          "max_DD_R": 6.766,
+          "early_65pct": {
+            "trades": 5,
+            "win_rate": 0.4,
+            "total_R": -0.6605,
+            "avg_R": -0.1321,
+            "PF": 0.789,
+            "max_DD_R": 2.423
+          },
+          "late_35pct": {
+            "trades": 12,
+            "win_rate": 0.1667,
+            "total_R": -6.1059,
+            "avg_R": -0.5088,
+            "PF": 0.366,
+            "max_DD_R": 6.106
+          },
+          "rejected": 10,
+          "signal_candidates": 31
+        },
+        "2.0": {
+          "trades": 17,
+          "win_rate": 0.2353,
+          "total_R": -7.459,
+          "avg_R": -0.4388,
+          "PF": 0.439,
+          "max_DD_R": 7.459,
+          "early_65pct": {
+            "trades": 5,
+            "win_rate": 0.4,
+            "total_R": -0.8696,
+            "avg_R": -0.1739,
+            "PF": 0.734,
+            "max_DD_R": 2.594
+          },
+          "late_35pct": {
+            "trades": 12,
+            "win_rate": 0.1667,
+            "total_R": -6.5894,
+            "avg_R": -0.5491,
+            "PF": 0.343,
+            "max_DD_R": 6.589
+          },
+          "rejected": 10,
+          "signal_candidates": 31
+        }
+      }
+    },
+    "ENGULF_TREND_M15": {
+      "timeframe": "15min",
+      "repository_reference": "erikoleci/gold-xauusd-ea",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Price action engulf plus trend",
+      "bars": 5729,
+      "costs": {
+        "0.4": {
+          "trades": 90,
+          "win_rate": 0.3222,
+          "total_R": -13.1239,
+          "avg_R": -0.1458,
+          "PF": 0.795,
+          "max_DD_R": 19.491,
+          "early_65pct": {
+            "trades": 35,
+            "win_rate": 0.3714,
+            "total_R": -0.2436,
+            "avg_R": -0.007,
+            "PF": 0.989,
+            "max_DD_R": 4.853
+          },
+          "late_35pct": {
+            "trades": 55,
+            "win_rate": 0.2909,
+            "total_R": -12.8803,
+            "avg_R": -0.2342,
+            "PF": 0.685,
+            "max_DD_R": 17.088
+          },
+          "rejected": 209,
+          "signal_candidates": 335
+        },
+        "1.0": {
+          "trades": 90,
+          "win_rate": 0.3222,
+          "total_R": -19.6098,
+          "avg_R": -0.2179,
+          "PF": 0.713,
+          "max_DD_R": 24.126,
+          "early_65pct": {
+            "trades": 35,
+            "win_rate": 0.3714,
+            "total_R": -2.7089,
+            "avg_R": -0.0774,
+            "PF": 0.889,
+            "max_DD_R": 5.533
+          },
+          "late_35pct": {
+            "trades": 55,
+            "win_rate": 0.2909,
+            "total_R": -16.9008,
+            "avg_R": -0.3073,
+            "PF": 0.614,
+            "max_DD_R": 20.819
+          },
+          "rejected": 209,
+          "signal_candidates": 335
+        },
+        "2.0": {
+          "trades": 90,
+          "win_rate": 0.3222,
+          "total_R": -30.4195,
+          "avg_R": -0.338,
+          "PF": 0.597,
+          "max_DD_R": 33.941,
+          "early_65pct": {
+            "trades": 35,
+            "win_rate": 0.3714,
+            "total_R": -6.8178,
+            "avg_R": -0.1948,
+            "PF": 0.747,
+            "max_DD_R": 8.754
+          },
+          "late_35pct": {
+            "trades": 55,
+            "win_rate": 0.2909,
+            "total_R": -23.6017,
+            "avg_R": -0.4291,
+            "PF": 0.514,
+            "max_DD_R": 27.039
+          },
+          "rejected": 209,
+          "signal_candidates": 335
+        }
+      }
+    },
+    "WICK_LEVEL_M15": {
+      "timeframe": "15min",
+      "repository_reference": "NadirAliOfficial/trading-scanner",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Liquidity sweep wick confirmation subset",
+      "bars": 5729,
+      "costs": {
+        "0.4": {
+          "trades": 51,
+          "win_rate": 0.2941,
+          "total_R": -12.7413,
+          "avg_R": -0.2498,
+          "PF": 0.661,
+          "max_DD_R": 14.151,
+          "early_65pct": {
+            "trades": 15,
+            "win_rate": 0.2667,
+            "total_R": -4.4256,
+            "avg_R": -0.295,
+            "PF": 0.614,
+            "max_DD_R": 6.184
+          },
+          "late_35pct": {
+            "trades": 36,
+            "win_rate": 0.3056,
+            "total_R": -8.3157,
+            "avg_R": -0.231,
+            "PF": 0.682,
+            "max_DD_R": 12.191
+          },
+          "rejected": 208,
+          "signal_candidates": 285
+        },
+        "1.0": {
+          "trades": 51,
+          "win_rate": 0.2941,
+          "total_R": -16.1607,
+          "avg_R": -0.3169,
+          "PF": 0.596,
+          "max_DD_R": 17.285,
+          "early_65pct": {
+            "trades": 15,
+            "win_rate": 0.2667,
+            "total_R": -5.364,
+            "avg_R": -0.3576,
+            "PF": 0.559,
+            "max_DD_R": 7.061
+          },
+          "late_35pct": {
+            "trades": 36,
+            "win_rate": 0.3056,
+            "total_R": -10.7967,
+            "avg_R": -0.2999,
+            "PF": 0.613,
+            "max_DD_R": 14.186
+          },
+          "rejected": 208,
+          "signal_candidates": 285
+        },
+        "2.0": {
+          "trades": 51,
+          "win_rate": 0.2941,
+          "total_R": -21.8597,
+          "avg_R": -0.4286,
+          "PF": 0.504,
+          "max_DD_R": 22.508,
+          "early_65pct": {
+            "trades": 15,
+            "win_rate": 0.2667,
+            "total_R": -6.928,
+            "avg_R": -0.4619,
+            "PF": 0.479,
+            "max_DD_R": 8.521
+          },
+          "late_35pct": {
+            "trades": 36,
+            "win_rate": 0.3056,
+            "total_R": -14.9317,
+            "avg_R": -0.4148,
+            "PF": 0.514,
+            "max_DD_R": 17.51
+          },
+          "rejected": 208,
+          "signal_candidates": 285
+        }
+      }
+    },
+    "CHANNEL_RECLAIM_M5": {
+      "timeframe": "5min",
+      "repository_reference": "lordgaruda/XAU-60",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Mechanical liquidity reclaim",
+      "bars": 7190,
+      "costs": {
+        "0.4": {
+          "trades": 276,
+          "win_rate": 0.3514,
+          "total_R": -27.7151,
+          "avg_R": -0.1004,
+          "PF": 0.853,
+          "max_DD_R": 38.703,
+          "early_65pct": {
+            "trades": 178,
+            "win_rate": 0.3483,
+            "total_R": -20.8463,
+            "avg_R": -0.1171,
+            "PF": 0.832,
+            "max_DD_R": 24.508
+          },
+          "late_35pct": {
+            "trades": 98,
+            "win_rate": 0.3571,
+            "total_R": -6.8688,
+            "avg_R": -0.0701,
+            "PF": 0.894,
+            "max_DD_R": 14.491
+          },
+          "rejected": 24,
+          "signal_candidates": 437
+        },
+        "1.0": {
+          "trades": 276,
+          "win_rate": 0.3514,
+          "total_R": -59.435,
+          "avg_R": -0.2153,
+          "PF": 0.715,
+          "max_DD_R": 65.639,
+          "early_65pct": {
+            "trades": 178,
+            "win_rate": 0.3483,
+            "total_R": -40.8494,
+            "avg_R": -0.2295,
+            "PF": 0.701,
+            "max_DD_R": 42.411
+          },
+          "late_35pct": {
+            "trades": 98,
+            "win_rate": 0.3571,
+            "total_R": -18.5856,
+            "avg_R": -0.1896,
+            "PF": 0.742,
+            "max_DD_R": 23.228
+          },
+          "rejected": 24,
+          "signal_candidates": 437
+        },
+        "2.0": {
+          "trades": 276,
+          "win_rate": 0.3514,
+          "total_R": -112.3014,
+          "avg_R": -0.4069,
+          "PF": 0.536,
+          "max_DD_R": 115.036,
+          "early_65pct": {
+            "trades": 178,
+            "win_rate": 0.3483,
+            "total_R": -74.1879,
+            "avg_R": -0.4168,
+            "PF": 0.53,
+            "max_DD_R": 75.215
+          },
+          "late_35pct": {
+            "trades": 98,
+            "win_rate": 0.3571,
+            "total_R": -38.1135,
+            "avg_R": -0.3889,
+            "PF": 0.548,
+            "max_DD_R": 39.822
+          },
+          "rejected": 24,
+          "signal_candidates": 437
+        }
+      }
+    },
+    "MID_RANGE_RECLAIM_H1": {
+      "timeframe": "1h",
+      "repository_reference": "RicardoBarato/xauusd-mt5-expert-advisor",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Regime channel reclaim",
+      "bars": 5176,
+      "costs": {
+        "0.4": {
+          "trades": 18,
+          "win_rate": 0.3333,
+          "total_R": -1.5158,
+          "avg_R": -0.0842,
+          "PF": 0.876,
+          "max_DD_R": 4.828,
+          "early_65pct": {
+            "trades": 5,
+            "win_rate": 0.6,
+            "total_R": 3.3124,
+            "avg_R": 0.6625,
+            "PF": 2.629,
+            "max_DD_R": 1.017
+          },
+          "late_35pct": {
+            "trades": 13,
+            "win_rate": 0.2308,
+            "total_R": -4.8281,
+            "avg_R": -0.3714,
+            "PF": 0.525,
+            "max_DD_R": 4.828
+          },
+          "rejected": 204,
+          "signal_candidates": 237
+        },
+        "1.0": {
+          "trades": 18,
+          "win_rate": 0.3333,
+          "total_R": -1.9894,
+          "avg_R": -0.1105,
+          "PF": 0.841,
+          "max_DD_R": 5.17,
+          "early_65pct": {
+            "trades": 5,
+            "win_rate": 0.6,
+            "total_R": 3.1809,
+            "avg_R": 0.6362,
+            "PF": 2.526,
+            "max_DD_R": 1.043
+          },
+          "late_35pct": {
+            "trades": 13,
+            "win_rate": 0.2308,
+            "total_R": -5.1703,
+            "avg_R": -0.3977,
+            "PF": 0.505,
+            "max_DD_R": 5.17
+          },
+          "rejected": 204,
+          "signal_candidates": 237
+        },
+        "2.0": {
+          "trades": 18,
+          "win_rate": 0.3333,
+          "total_R": -2.7788,
+          "avg_R": -0.1544,
+          "PF": 0.787,
+          "max_DD_R": 5.741,
+          "early_65pct": {
+            "trades": 5,
+            "win_rate": 0.6,
+            "total_R": 2.9618,
+            "avg_R": 0.5924,
+            "PF": 2.365,
+            "max_DD_R": 1.086
+          },
+          "late_35pct": {
+            "trades": 13,
+            "win_rate": 0.2308,
+            "total_R": -5.7406,
+            "avg_R": -0.4416,
+            "PF": 0.472,
+            "max_DD_R": 5.741
+          },
+          "rejected": 204,
+          "signal_candidates": 237
+        }
+      }
+    },
+    "PREV_DAY_BREAK_M5": {
+      "timeframe": "5min",
+      "repository_reference": "Turnipnator/Oanda_Gold",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Broker-time session diagnostic only",
+      "bars": 7190,
+      "costs": {
+        "0.4": {
+          "trades": 70,
+          "win_rate": 0.2571,
+          "total_R": -25.6829,
+          "avg_R": -0.3669,
+          "PF": 0.548,
+          "max_DD_R": 31.2,
+          "early_65pct": {
+            "trades": 42,
+            "win_rate": 0.1667,
+            "total_R": -26.499,
+            "avg_R": -0.6309,
+            "PF": 0.313,
+            "max_DD_R": 27.857
+          },
+          "late_35pct": {
+            "trades": 28,
+            "win_rate": 0.3929,
+            "total_R": 0.8161,
+            "avg_R": 0.0291,
+            "PF": 1.045,
+            "max_DD_R": 8.594
+          },
+          "rejected": 17,
+          "signal_candidates": 106
+        },
+        "1.0": {
+          "trades": 70,
+          "win_rate": 0.2571,
+          "total_R": -33.3082,
+          "avg_R": -0.4758,
+          "PF": 0.467,
+          "max_DD_R": 38.101,
+          "early_65pct": {
+            "trades": 42,
+            "win_rate": 0.1667,
+            "total_R": -31.1485,
+            "avg_R": -0.7416,
+            "PF": 0.267,
+            "max_DD_R": 32.143
+          },
+          "late_35pct": {
+            "trades": 28,
+            "win_rate": 0.3929,
+            "total_R": -2.1597,
+            "avg_R": -0.0771,
+            "PF": 0.892,
+            "max_DD_R": 9.537
+          },
+          "rejected": 17,
+          "signal_candidates": 106
+        },
+        "2.0": {
+          "trades": 70,
+          "win_rate": 0.2571,
+          "total_R": -46.0171,
+          "avg_R": -0.6574,
+          "PF": 0.36,
+          "max_DD_R": 49.602,
+          "early_65pct": {
+            "trades": 42,
+            "win_rate": 0.1667,
+            "total_R": -38.8978,
+            "avg_R": -0.9261,
+            "PF": 0.206,
+            "max_DD_R": 39.287
+          },
+          "late_35pct": {
+            "trades": 28,
+            "win_rate": 0.3929,
+            "total_R": -7.1193,
+            "avg_R": -0.2543,
+            "PF": 0.689,
+            "max_DD_R": 11.674
+          },
+          "rejected": 17,
+          "signal_candidates": 106
+        }
+      }
+    },
+    "NR7_BREAK_M5": {
+      "timeframe": "5min",
+      "repository_reference": "NziCode/mt5-trading-bots",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Narrow range volatility expansion",
+      "bars": 7190,
+      "costs": {
+        "0.4": {
+          "trades": 346,
+          "win_rate": 0.341,
+          "total_R": -50.7886,
+          "avg_R": -0.1468,
+          "PF": 0.791,
+          "max_DD_R": 63.495,
+          "early_65pct": {
+            "trades": 222,
+            "win_rate": 0.3559,
+            "total_R": -23.7992,
+            "avg_R": -0.1072,
+            "PF": 0.844,
+            "max_DD_R": 37.391
+          },
+          "late_35pct": {
+            "trades": 124,
+            "win_rate": 0.3145,
+            "total_R": -26.9894,
+            "avg_R": -0.2177,
+            "PF": 0.705,
+            "max_DD_R": 32.794
+          },
+          "rejected": 24,
+          "signal_candidates": 723
+        },
+        "1.0": {
+          "trades": 346,
+          "win_rate": 0.3382,
+          "total_R": -91.2033,
+          "avg_R": -0.2636,
+          "PF": 0.663,
+          "max_DD_R": 100.305,
+          "early_65pct": {
+            "trades": 222,
+            "win_rate": 0.3514,
+            "total_R": -49.2175,
+            "avg_R": -0.2217,
+            "PF": 0.708,
+            "max_DD_R": 60.533
+          },
+          "late_35pct": {
+            "trades": 124,
+            "win_rate": 0.3145,
+            "total_R": -41.9858,
+            "avg_R": -0.3386,
+            "PF": 0.588,
+            "max_DD_R": 45.097
+          },
+          "rejected": 24,
+          "signal_candidates": 723
+        },
+        "2.0": {
+          "trades": 346,
+          "win_rate": 0.3324,
+          "total_R": -158.5611,
+          "avg_R": -0.4583,
+          "PF": 0.498,
+          "max_DD_R": 164.488,
+          "early_65pct": {
+            "trades": 222,
+            "win_rate": 0.3468,
+            "total_R": -91.5814,
+            "avg_R": -0.4125,
+            "PF": 0.534,
+            "max_DD_R": 99.103
+          },
+          "late_35pct": {
+            "trades": 124,
+            "win_rate": 0.3065,
+            "total_R": -66.9796,
+            "avg_R": -0.5402,
+            "PF": 0.439,
+            "max_DD_R": 68.435
+          },
+          "rejected": 24,
+          "signal_candidates": 723
+        }
+      }
+    },
+    "HA_MOMENTUM_H1": {
+      "timeframe": "1h",
+      "repository_reference": "manishsolanki1703/XAUUSD-Strategy",
+      "method": "rule-adaptation not original EA",
+      "caveat": "HA momentum without AI",
+      "bars": 5176,
+      "costs": {
+        "0.4": {
+          "trades": 200,
+          "win_rate": 0.415,
+          "total_R": 27.7972,
+          "avg_R": 0.139,
+          "PF": 1.232,
+          "max_DD_R": 16.538,
+          "early_65pct": {
+            "trades": 84,
+            "win_rate": 0.4762,
+            "total_R": 26.0505,
+            "avg_R": 0.3101,
+            "PF": 1.576,
+            "max_DD_R": 6.616
+          },
+          "late_35pct": {
+            "trades": 116,
+            "win_rate": 0.3707,
+            "total_R": 1.7467,
+            "avg_R": 0.0151,
+            "PF": 1.023,
+            "max_DD_R": 16.538
+          },
+          "rejected": 924,
+          "signal_candidates": 1736
+        },
+        "1.0": {
+          "trades": 200,
+          "win_rate": 0.415,
+          "total_R": 22.1692,
+          "avg_R": 0.1108,
+          "PF": 1.18,
+          "max_DD_R": 17.644,
+          "early_65pct": {
+            "trades": 84,
+            "win_rate": 0.4762,
+            "total_R": 23.8019,
+            "avg_R": 0.2834,
+            "PF": 1.513,
+            "max_DD_R": 6.941
+          },
+          "late_35pct": {
+            "trades": 116,
+            "win_rate": 0.3707,
+            "total_R": -1.6327,
+            "avg_R": -0.0141,
+            "PF": 0.979,
+            "max_DD_R": 17.644
+          },
+          "rejected": 924,
+          "signal_candidates": 1736
+        },
+        "2.0": {
+          "trades": 200,
+          "win_rate": 0.415,
+          "total_R": 12.7891,
+          "avg_R": 0.0639,
+          "PF": 1.099,
+          "max_DD_R": 19.489,
+          "early_65pct": {
+            "trades": 84,
+            "win_rate": 0.4762,
+            "total_R": 20.0543,
+            "avg_R": 0.2387,
+            "PF": 1.415,
+            "max_DD_R": 7.482
+          },
+          "late_35pct": {
+            "trades": 116,
+            "win_rate": 0.3707,
+            "total_R": -7.2651,
+            "avg_R": -0.0626,
+            "PF": 0.91,
+            "max_DD_R": 19.489
+          },
+          "rejected": 924,
+          "signal_candidates": 1736
+        }
+      }
+    },
+    "CCI_REVERSION_M15": {
+      "timeframe": "15min",
+      "repository_reference": "Josewathome/XAUUSD-tradding-bot",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Independent CCI mean reversion",
+      "bars": 5729,
+      "costs": {
+        "0.4": {
+          "trades": 20,
+          "win_rate": 0.2,
+          "total_R": -9.0524,
+          "avg_R": -0.4526,
+          "PF": 0.437,
+          "max_DD_R": 13.255,
+          "early_65pct": {
+            "trades": 2,
+            "win_rate": 0.5,
+            "total_R": 0.7175,
+            "avg_R": 0.3587,
+            "PF": 1.689,
+            "max_DD_R": 1.042
+          },
+          "late_35pct": {
+            "trades": 18,
+            "win_rate": 0.1667,
+            "total_R": -9.7699,
+            "avg_R": -0.5428,
+            "PF": 0.35,
+            "max_DD_R": 12.213
+          },
+          "rejected": 324,
+          "signal_candidates": 359
+        },
+        "1.0": {
+          "trades": 20,
+          "win_rate": 0.2,
+          "total_R": -10.4049,
+          "avg_R": -0.5202,
+          "PF": 0.393,
+          "max_DD_R": 14.31,
+          "early_65pct": {
+            "trades": 2,
+            "win_rate": 0.5,
+            "total_R": 0.5936,
+            "avg_R": 0.2968,
+            "PF": 1.538,
+            "max_DD_R": 1.104
+          },
+          "late_35pct": {
+            "trades": 18,
+            "win_rate": 0.1667,
+            "total_R": -10.9985,
+            "avg_R": -0.611,
+            "PF": 0.314,
+            "max_DD_R": 13.206
+          },
+          "rejected": 324,
+          "signal_candidates": 359
+        },
+        "2.0": {
+          "trades": 20,
+          "win_rate": 0.2,
+          "total_R": -12.6591,
+          "avg_R": -0.633,
+          "PF": 0.331,
+          "max_DD_R": 16.07,
+          "early_65pct": {
+            "trades": 2,
+            "win_rate": 0.5,
+            "total_R": 0.3873,
+            "avg_R": 0.1936,
+            "PF": 1.321,
+            "max_DD_R": 1.208
+          },
+          "late_35pct": {
+            "trades": 18,
+            "win_rate": 0.1667,
+            "total_R": -13.0463,
+            "avg_R": -0.7248,
+            "PF": 0.264,
+            "max_DD_R": 14.862
+          },
+          "rejected": 324,
+          "signal_candidates": 359
+        }
+      }
+    },
+    "PRICE_CHANNEL_M15": {
+      "timeframe": "15min",
+      "repository_reference": "P1Piyush/XAUUSD-Trading-Bots",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Channel momentum subset",
+      "bars": 5729,
+      "costs": {
+        "0.4": {
+          "trades": 93,
+          "win_rate": 0.3548,
+          "total_R": -4.4963,
+          "avg_R": -0.0483,
+          "PF": 0.928,
+          "max_DD_R": 16.326,
+          "early_65pct": {
+            "trades": 31,
+            "win_rate": 0.3871,
+            "total_R": 1.2641,
+            "avg_R": 0.0408,
+            "PF": 1.064,
+            "max_DD_R": 6.593
+          },
+          "late_35pct": {
+            "trades": 62,
+            "win_rate": 0.3387,
+            "total_R": -5.7603,
+            "avg_R": -0.0929,
+            "PF": 0.865,
+            "max_DD_R": 16.326
+          },
+          "rejected": 507,
+          "signal_candidates": 768
+        },
+        "1.0": {
+          "trades": 93,
+          "win_rate": 0.3548,
+          "total_R": -10.9785,
+          "avg_R": -0.118,
+          "PF": 0.835,
+          "max_DD_R": 19.266,
+          "early_65pct": {
+            "trades": 31,
+            "win_rate": 0.3871,
+            "total_R": -0.7398,
+            "avg_R": -0.0239,
+            "PF": 0.965,
+            "max_DD_R": 7.654
+          },
+          "late_35pct": {
+            "trades": 62,
+            "win_rate": 0.3387,
+            "total_R": -10.2387,
+            "avg_R": -0.1651,
+            "PF": 0.775,
+            "max_DD_R": 19.266
+          },
+          "rejected": 507,
+          "signal_candidates": 768
+        },
+        "2.0": {
+          "trades": 93,
+          "win_rate": 0.3548,
+          "total_R": -21.7821,
+          "avg_R": -0.2342,
+          "PF": 0.704,
+          "max_DD_R": 27.692,
+          "early_65pct": {
+            "trades": 31,
+            "win_rate": 0.3871,
+            "total_R": -4.0796,
+            "avg_R": -0.1316,
+            "PF": 0.824,
+            "max_DD_R": 9.508
+          },
+          "late_35pct": {
+            "trades": 62,
+            "win_rate": 0.3387,
+            "total_R": -17.7025,
+            "avg_R": -0.2855,
+            "PF": 0.65,
+            "max_DD_R": 24.757
+          },
+          "rejected": 507,
+          "signal_candidates": 768
+        }
+      }
+    },
+    "EMA_ATR_CONFIRM_M5": {
+      "timeframe": "5min",
+      "repository_reference": "AhsanAli013/MT5-XAUUSD-Scalping-EA",
+      "method": "rule-adaptation not original EA",
+      "caveat": "EMA RSI ADX ATR entry",
+      "bars": 7190,
+      "costs": {
+        "0.4": {
+          "trades": 118,
+          "win_rate": 0.339,
+          "total_R": -15.7596,
+          "avg_R": -0.1336,
+          "PF": 0.809,
+          "max_DD_R": 19.565,
+          "early_65pct": {
+            "trades": 77,
+            "win_rate": 0.3636,
+            "total_R": -4.6458,
+            "avg_R": -0.0603,
+            "PF": 0.911,
+            "max_DD_R": 16.141
+          },
+          "late_35pct": {
+            "trades": 41,
+            "win_rate": 0.2927,
+            "total_R": -11.1139,
+            "avg_R": -0.2711,
+            "PF": 0.637,
+            "max_DD_R": 13.653
+          },
+          "rejected": 8,
+          "signal_candidates": 199
+        },
+        "1.0": {
+          "trades": 118,
+          "win_rate": 0.339,
+          "total_R": -29.2942,
+          "avg_R": -0.2483,
+          "PF": 0.679,
+          "max_DD_R": 32.508,
+          "early_65pct": {
+            "trades": 77,
+            "win_rate": 0.3636,
+            "total_R": -13.2694,
+            "avg_R": -0.1723,
+            "PF": 0.768,
+            "max_DD_R": 18.76
+          },
+          "late_35pct": {
+            "trades": 41,
+            "win_rate": 0.2927,
+            "total_R": -16.0248,
+            "avg_R": -0.3908,
+            "PF": 0.532,
+            "max_DD_R": 16.99
+          },
+          "rejected": 8,
+          "signal_candidates": 199
+        },
+        "2.0": {
+          "trades": 118,
+          "win_rate": 0.3305,
+          "total_R": -51.8518,
+          "avg_R": -0.4394,
+          "PF": 0.511,
+          "max_DD_R": 54.08,
+          "early_65pct": {
+            "trades": 77,
+            "win_rate": 0.3636,
+            "total_R": -27.642,
+            "avg_R": -0.359,
+            "PF": 0.579,
+            "max_DD_R": 29.516
+          },
+          "late_35pct": {
+            "trades": 41,
+            "win_rate": 0.2683,
+            "total_R": -24.2097,
+            "avg_R": -0.5905,
+            "PF": 0.4,
+            "max_DD_R": 24.564
+          },
+          "rejected": 8,
+          "signal_candidates": 199
+        }
+      }
+    },
+    "STOCH_REBOUND_M15": {
+      "timeframe": "15min",
+      "repository_reference": "Michael-Ishak/MQL5-XAUUSD-Trading-Expert-Advisor",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Generic stochastic EMA; original not publicly disclosed",
+      "bars": 5729,
+      "costs": {
+        "0.4": {
+          "trades": 47,
+          "win_rate": 0.3191,
+          "total_R": -7.1435,
+          "avg_R": -0.152,
+          "PF": 0.786,
+          "max_DD_R": 10.386,
+          "early_65pct": {
+            "trades": 12,
+            "win_rate": 0.1667,
+            "total_R": -6.902,
+            "avg_R": -0.5752,
+            "PF": 0.337,
+            "max_DD_R": 6.902
+          },
+          "late_35pct": {
+            "trades": 35,
+            "win_rate": 0.3714,
+            "total_R": -0.2415,
+            "avg_R": -0.0069,
+            "PF": 0.99,
+            "max_DD_R": 5.219
+          },
+          "rejected": 224,
+          "signal_candidates": 300
+        },
+        "1.0": {
+          "trades": 47,
+          "win_rate": 0.3191,
+          "total_R": -10.3587,
+          "avg_R": -0.2204,
+          "PF": 0.709,
+          "max_DD_R": 12.166,
+          "early_65pct": {
+            "trades": 12,
+            "win_rate": 0.1667,
+            "total_R": -7.6549,
+            "avg_R": -0.6379,
+            "PF": 0.307,
+            "max_DD_R": 7.655
+          },
+          "late_35pct": {
+            "trades": 35,
+            "win_rate": 0.3714,
+            "total_R": -2.7038,
+            "avg_R": -0.0773,
+            "PF": 0.89,
+            "max_DD_R": 6.148
+          },
+          "rejected": 224,
+          "signal_candidates": 300
+        },
+        "2.0": {
+          "trades": 47,
+          "win_rate": 0.3191,
+          "total_R": -15.7174,
+          "avg_R": -0.3344,
+          "PF": 0.598,
+          "max_DD_R": 15.717,
+          "early_65pct": {
+            "trades": 12,
+            "win_rate": 0.1667,
+            "total_R": -8.9098,
+            "avg_R": -0.7425,
+            "PF": 0.263,
+            "max_DD_R": 8.91
+          },
+          "late_35pct": {
+            "trades": 35,
+            "win_rate": 0.3714,
+            "total_R": -6.8076,
+            "avg_R": -0.1945,
+            "PF": 0.748,
+            "max_DD_R": 8.282
+          },
+          "rejected": 224,
+          "signal_candidates": 300
+        }
+      }
+    },
+    "PIVOT_CENTRE_M5": {
+      "timeframe": "5min",
+      "repository_reference": "mahmoud20138/Gold-MultiAgent-Analyzer",
+      "method": "rule-adaptation not original EA",
+      "caveat": "Mechanical pivot signal, not original agent",
+      "bars": 7190,
+      "costs": {
+        "0.4": {
+          "trades": 247,
+          "win_rate": 0.3522,
+          "total_R": -26.228,
+          "avg_R": -0.1062,
+          "PF": 0.846,
+          "max_DD_R": 33.421,
+          "early_65pct": {
+            "trades": 153,
+            "win_rate": 0.3268,
+            "total_R": -26.916,
+            "avg_R": -0.1759,
+            "PF": 0.753,
+            "max_DD_R": 28.842
+          },
+          "late_35pct": {
+            "trades": 94,
+            "win_rate": 0.3936,
+            "total_R": 0.688,
+            "avg_R": 0.0073,
+            "PF": 1.011,
+            "max_DD_R": 12.972
+          },
+          "rejected": 8,
+          "signal_candidates": 474
+        },
+        "1.0": {
+          "trades": 247,
+          "win_rate": 0.3522,
+          "total_R": -55.8637,
+          "avg_R": -0.2262,
+          "PF": 0.705,
+          "max_DD_R": 58.037,
+          "early_65pct": {
+            "trades": 153,
+            "win_rate": 0.3268,
+            "total_R": -45.2821,
+            "avg_R": -0.296,
+            "PF": 0.626,
+            "max_DD_R": 45.384
+          },
+          "late_35pct": {
+            "trades": 94,
+            "win_rate": 0.3936,
+            "total_R": -10.5816,
+            "avg_R": -0.1126,
+            "PF": 0.845,
+            "max_DD_R": 18.729
+          },
+          "rejected": 8,
+          "signal_candidates": 474
+        },
+        "2.0": {
+          "trades": 247,
+          "win_rate": 0.3441,
+          "total_R": -105.2566,
+          "avg_R": -0.4261,
+          "PF": 0.523,
+          "max_DD_R": 107.003,
+          "early_65pct": {
+            "trades": 153,
+            "win_rate": 0.3137,
+            "total_R": -75.8923,
+            "avg_R": -0.496,
+            "PF": 0.463,
+            "max_DD_R": 75.892
+          },
+          "late_35pct": {
+            "trades": 94,
+            "win_rate": 0.3936,
+            "total_R": -29.3643,
+            "avg_R": -0.3124,
+            "PF": 0.629,
+            "max_DD_R": 35.859
+          },
+          "rejected": 8,
+          "signal_candidates": 474
+        }
+      }
+    }
+  },
+  "errors": {},
+  "cost_sensitivity": [
+    0.4,
+    1.0,
+    2.0
+  ],
+  "audit_remarks": [
+    "PIP/TICK SIZE not interchangeable with price USD.",
+    "No real bid/ask spread in archived OHLC: only assumed prices.",
+    "Close-of-bar signal, NEXT bar open entry; stop-first on double touch.",
+    "Timezone unconfirmed; session-dependent result diagnostic only.",
+    "Examined past bars are research data, cannot be considered untouched holdout.",
+    "Volume and model-based claims cannot be reproduced on OHLC alone.",
+    "30 repositories classified; 24 synthetic research hypotheses evaluated."
+  ]
+}
