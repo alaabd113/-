@@ -1,0 +1,32 @@
+{
+  "version": "GoldStation V9 original, lossless xz transport",
+  "source_name": "GoldStation_V9_SMC_PO3_PO3_TradingView_VolumeProfile_2026-11-01.zip",
+  "source_size_bytes": 40174214,
+  "source_sha256": "8d709db6a61745a933892a0a4e55bdc728005d1e35f46f8eb79d6ad538a050a3",
+  "compressed_size_bytes": 39462020,
+  "compressed_sha256": "00241ed9e2e1dc56f98f27bed2747016fa2471c9838ae8103fc828f663d9d42f",
+  "chunk_size_bytes": 9865505,
+  "chunk_count": 4,
+  "chunks": [
+    {
+      "name": "GoldStation_V9_PAYLOAD.part01",
+      "bytes": 9865505,
+      "sha256": "9eb65af2bd7bc8329b2365fbe33444968083ffde12f8af1cc0342701b5a5ef63"
+    },
+    {
+      "name": "GoldStation_V9_PAYLOAD.part02",
+      "bytes": 9865505,
+      "sha256": "4e2c71a06175fb39af499a599e0fd7da6d5c31440057ee7b71b28820c8cd8947"
+    },
+    {
+      "name": "GoldStation_V9_PAYLOAD.part03",
+      "bytes": 9865505,
+      "sha256": "e8d6413d8bb5ea2095ad325b1a329e04965187b3cca047cee0c2e20bb73b57b6"
+    },
+    {
+      "name": "GoldStation_V9_PAYLOAD.part04",
+      "bytes": 9865505,
+      "sha256": "d1ad7ff028e62bd4b3cce164330dd4252f8d0403c04bbb2b2805a6440e1ba2b2"
+    }
+  ]
+}
