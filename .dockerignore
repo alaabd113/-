@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+runtime
+__pycache__
+*.pyc
+.pytest_cache
+.git
+data/ctrader_live
+*.db-wal
+*.db-shm
