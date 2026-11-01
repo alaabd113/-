@@ -1,0 +1,68 @@
+{
+  "note": "Exploratory only. This market sample is NOT pristine OOS; random-direction baselines share entry times and never establish superiority to random entry. No model approved.",
+  "BOLL_RSI_FADE_M5": {
+    "repo_reference": "INDEPENDENT_BOLL_RSI_HYPOTHESIS",
+    "trades": 141,
+    "net_R_at_1usd": 14.8456,
+    "expected_R": 0.1053,
+    "bootstrap95_mean_R": [
+      -0.131,
+      0.3371
+    ],
+    "random_direction_mean_net_R": -4.9253,
+    "random_direction_p_upper": 0.1045,
+    "trials": 200
+  },
+  "HA_MOMENTUM_H1": {
+    "repo_reference": "manishsolanki1703/XAUUSD-Strategy",
+    "trades": 200,
+    "net_R_at_1usd": 22.1692,
+    "expected_R": 0.1108,
+    "bootstrap95_mean_R": [
+      -0.0735,
+      0.2903
+    ],
+    "random_direction_mean_net_R": 2.1094,
+    "random_direction_p_upper": 0.1144,
+    "trials": 200
+  },
+  "DONCHIAN55_H4": {
+    "repo_reference": "INDEPENDENT_TURTLE_HYPOTHESIS",
+    "trades": 68,
+    "net_R_at_1usd": 10.4817,
+    "expected_R": 0.1541,
+    "bootstrap95_mean_R": [
+      -0.1769,
+      0.4872
+    ],
+    "random_direction_mean_net_R": -0.892,
+    "random_direction_p_upper": 0.1393,
+    "trials": 200
+  },
+  "DONCHIAN20_H1": {
+    "repo_reference": "NziCode/mt5-trading-bots",
+    "trades": 9,
+    "net_R_at_1usd": 10.2181,
+    "expected_R": 1.1353,
+    "bootstrap95_mean_R": [
+      0.2025,
+      1.7582
+    ],
+    "random_direction_mean_net_R": 2.9903,
+    "random_direction_p_upper": 0.0299,
+    "trials": 200
+  },
+  "TRIPLE_CONFIRM_M15": {
+    "repo_reference": "Turnipnator/Oanda_Gold",
+    "trades": 171,
+    "net_R_at_1usd": -5.5708,
+    "expected_R": -0.0326,
+    "bootstrap95_mean_R": [
+      -0.2277,
+      0.1748
+    ],
+    "random_direction_mean_net_R": -14.4756,
+    "random_direction_p_upper": 0.2736,
+    "trials": 200
+  }
+}
