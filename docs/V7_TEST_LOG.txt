@@ -1,0 +1,151 @@
+VERIFICATION PASS #1
+RUN: ['/opt/pyvenv/bin/python', '-m', 'compileall', '-q', '/mnt/data/GoldStation_V7_Audited_Enabled_Strategies/engine', '/mnt/data/GoldStation_V7_Audited_Enabled_Strategies/ctrader', '/mnt/data/GoldStation_V7_Audited_Enabled_Strategies/research', '/mnt/data/GoldStation_V7_Audited_Enabled_Strategies/scripts', '/mnt/data/GoldStation_V7_Audited_Enabled_Strategies/strategies']
+RUN: ['/opt/pyvenv/bin/python', '-m', 'unittest', 'discover', '-s', '/mnt/data/GoldStation_V7_Audited_Enabled_Strategies/tests', '-v']
+test_aware_utc (test_pipeline.T.test_aware_utc) ... ok
+test_bad_stop (test_pipeline.T.test_bad_stop) ... ok
+test_daily_loss (test_pipeline.T.test_daily_loss) ... ok
+test_demo_optin (test_pipeline.T.test_demo_optin) ... ok
+test_disapproved (test_pipeline.T.test_disapproved) ... ok
+test_high_spread (test_pipeline.T.test_high_spread) ... ok
+test_ids_stable (test_pipeline.T.test_ids_stable) ... ok
+test_intent_idempotency (test_pipeline.T.test_intent_idempotency) ... ok
+test_live_blocked (test_pipeline.T.test_live_blocked) ... ok
+test_min_volume (test_pipeline.T.test_min_volume) ... ok
+test_order_locked_without_sdk (test_pipeline.T.test_order_locked_without_sdk) ... ok
+test_relative_protection (test_pipeline.T.test_relative_protection) ... ok
+test_shadow_valid (test_pipeline.T.test_shadow_valid) ... ok
+test_stale_quote (test_pipeline.T.test_stale_quote) ... ok
+test_volume_rounding (test_pipeline.T.test_volume_rounding) ... ok
+test_weak_evidence (test_pipeline.T.test_weak_evidence) ... ok
+test_wide_stop (test_pipeline.T.test_wide_stop) ... ok
+test_delta_prices (test_pipeline.TBar.test_delta_prices) ... ok
+/opt/pyvenv/lib/python3.13/site-packages/pandas/io/sql.py:2768: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f67511df790>
+  result = cur.fetchall()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/pyvenv/lib/python3.13/site-packages/pandas/io/sql.py:2768: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f67511df3d0>
+  result = cur.fetchall()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/pyvenv/lib/python3.13/site-packages/pandas/io/sql.py:2768: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f67511df4c0>
+  result = cur.fetchall()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/pyvenv/lib/python3.13/site-packages/pandas/io/sql.py:2768: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f6750ffdc60>
+  result = cur.fetchall()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/pyvenv/lib/python3.13/site-packages/pandas/io/sql.py:2768: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f6750ffdd50>
+  result = cur.fetchall()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/pyvenv/lib/python3.13/site-packages/pandas/io/sql.py:2768: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f6750ffde40>
+  result = cur.fetchall()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+test_cost_decreases_return_for_fixed_trades (test_research.TResearch.test_cost_decreases_return_for_fixed_trades) ... ok
+test_future_invariance (test_research.TResearch.test_future_invariance) ... ok
+test_loss_first (test_research.TResearch.test_loss_first) ... ok
+test_no_same_bar_entry (test_research.TResearch.test_no_same_bar_entry) ... ok
+test_signal_tf_all (test_research.TResearch.test_signal_tf_all) ... ok
+test_source_is_ctrader (test_research.TResearch.test_source_is_ctrader) ... ok
+test_source_ohlc (test_research.TResearch.test_source_ohlc) ... ok
+test_actual_current_fade_replayed (test_v7.DeepRegression.test_actual_current_fade_replayed) ... ok
+test_frozen_po3_signal_is_executable (test_v7.DeepRegression.test_frozen_po3_signal_is_executable) ... ok
+test_live_account_never_in_order_setup (test_v7.DeepRegression.test_live_account_never_in_order_setup) ... ok
+test_reference_profit_stable (test_v7.DeepRegression.test_reference_profit_stable) ... ok
+test_source_sidecar_identifies_period (test_v7.DeepRegression.test_source_sidecar_identifies_period) ... ok
+test_all_75_registered_and_enabled (test_v7.V7Tests.test_all_75_registered_and_enabled) ... ok
+test_causal_no_future_for_fade (test_v7.V7Tests.test_causal_no_future_for_fade) ... ok
+test_close_gate (test_v7.V7Tests.test_close_gate) ... ok
+test_disabled_not_evaluated (test_v7.V7Tests.test_disabled_not_evaluated) ... ok
+test_empty_data_rejected (test_v7.V7Tests.test_empty_data_rejected) ... ok
+test_naive_rejected_for_live (test_v7.V7Tests.test_naive_rejected_for_live) ... ok
+test_nested_sqlite_dir (test_v7.V7Tests.test_nested_sqlite_dir) ... ok
+test_owner_commands_block_others (test_v7.V7Tests.test_owner_commands_block_others) ... ok
+test_precision_5digits (test_v7.V7Tests.test_precision_5digits) ... ok
+test_reference_po3_hash (test_v7.V7Tests.test_reference_po3_hash) ... ok
+test_registry_research_cannot_authorize_demo (test_v7.V7Tests.test_registry_research_cannot_authorize_demo) ... ok
+test_registry_toggle_only_one (test_v7.V7Tests.test_registry_toggle_only_one) ... ok
+test_unique_executable_generators (test_v7.V7Tests.test_unique_executable_generators) ... ok
+test_utc_csv_load (test_v7.V7Tests.test_utc_csv_load) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.457s
+
+OK
+RUN: ['/opt/pyvenv/bin/python', '-m', 'scripts.check_configuration']
+Mode: OFFLINE Demo send enabled: False Live send enabled: False
+Data: candles_15min_ctrader.csv, candles_1day_ctrader.csv, candles_1h_ctrader.csv, candles_1min_ctrader.csv, candles_30min_ctrader.csv, candles_4h_ctrader.csv, candles_5min_ctrader.csv
+Optional cTrader vars set: {'CTRADER_CLIENT_ID': False, 'CTRADER_CLIENT_SECRET': False, 'CTRADER_ACCESS_TOKEN': False, 'CTRADER_ACCOUNT_ID': False, 'CTRADER_SYMBOL_ID': False}
+ALL_OFFLINE_CHECKS_PASS
+
+VERIFICATION PASS #2
+RUN: ['/opt/pyvenv/bin/python', '-m', 'compileall', '-q', '/mnt/data/GoldStation_V7_Audited_Enabled_Strategies/engine', '/mnt/data/GoldStation_V7_Audited_Enabled_Strategies/ctrader', '/mnt/data/GoldStation_V7_Audited_Enabled_Strategies/research', '/mnt/data/GoldStation_V7_Audited_Enabled_Strategies/scripts', '/mnt/data/GoldStation_V7_Audited_Enabled_Strategies/strategies']
+RUN: ['/opt/pyvenv/bin/python', '-m', 'unittest', 'discover', '-s', '/mnt/data/GoldStation_V7_Audited_Enabled_Strategies/tests', '-v']
+test_aware_utc (test_pipeline.T.test_aware_utc) ... ok
+test_bad_stop (test_pipeline.T.test_bad_stop) ... ok
+test_daily_loss (test_pipeline.T.test_daily_loss) ... ok
+test_demo_optin (test_pipeline.T.test_demo_optin) ... ok
+test_disapproved (test_pipeline.T.test_disapproved) ... ok
+test_high_spread (test_pipeline.T.test_high_spread) ... ok
+test_ids_stable (test_pipeline.T.test_ids_stable) ... ok
+test_intent_idempotency (test_pipeline.T.test_intent_idempotency) ... ok
+test_live_blocked (test_pipeline.T.test_live_blocked) ... ok
+test_min_volume (test_pipeline.T.test_min_volume) ... ok
+test_order_locked_without_sdk (test_pipeline.T.test_order_locked_without_sdk) ... ok
+test_relative_protection (test_pipeline.T.test_relative_protection) ... ok
+test_shadow_valid (test_pipeline.T.test_shadow_valid) ... ok
+test_stale_quote (test_pipeline.T.test_stale_quote) ... ok
+test_volume_rounding (test_pipeline.T.test_volume_rounding) ... ok
+test_weak_evidence (test_pipeline.T.test_weak_evidence) ... ok
+test_wide_stop (test_pipeline.T.test_wide_stop) ... ok
+test_delta_prices (test_pipeline.TBar.test_delta_prices) ... ok
+/opt/pyvenv/lib/python3.13/site-packages/pandas/io/sql.py:2768: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f641042f790>
+  result = cur.fetchall()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/pyvenv/lib/python3.13/site-packages/pandas/io/sql.py:2768: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f641042f3d0>
+  result = cur.fetchall()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/pyvenv/lib/python3.13/site-packages/pandas/io/sql.py:2768: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f641042f4c0>
+  result = cur.fetchall()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/pyvenv/lib/python3.13/site-packages/pandas/io/sql.py:2768: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f6410251c60>
+  result = cur.fetchall()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/pyvenv/lib/python3.13/site-packages/pandas/io/sql.py:2768: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f6410251d50>
+  result = cur.fetchall()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/opt/pyvenv/lib/python3.13/site-packages/pandas/io/sql.py:2768: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f6410251e40>
+  result = cur.fetchall()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+test_cost_decreases_return_for_fixed_trades (test_research.TResearch.test_cost_decreases_return_for_fixed_trades) ... ok
+test_future_invariance (test_research.TResearch.test_future_invariance) ... ok
+test_loss_first (test_research.TResearch.test_loss_first) ... ok
+test_no_same_bar_entry (test_research.TResearch.test_no_same_bar_entry) ... ok
+test_signal_tf_all (test_research.TResearch.test_signal_tf_all) ... ok
+test_source_is_ctrader (test_research.TResearch.test_source_is_ctrader) ... ok
+test_source_ohlc (test_research.TResearch.test_source_ohlc) ... ok
+test_actual_current_fade_replayed (test_v7.DeepRegression.test_actual_current_fade_replayed) ... ok
+test_frozen_po3_signal_is_executable (test_v7.DeepRegression.test_frozen_po3_signal_is_executable) ... ok
+test_live_account_never_in_order_setup (test_v7.DeepRegression.test_live_account_never_in_order_setup) ... ok
+test_reference_profit_stable (test_v7.DeepRegression.test_reference_profit_stable) ... ok
+test_source_sidecar_identifies_period (test_v7.DeepRegression.test_source_sidecar_identifies_period) ... ok
+test_all_75_registered_and_enabled (test_v7.V7Tests.test_all_75_registered_and_enabled) ... ok
+test_causal_no_future_for_fade (test_v7.V7Tests.test_causal_no_future_for_fade) ... ok
+test_close_gate (test_v7.V7Tests.test_close_gate) ... ok
+test_disabled_not_evaluated (test_v7.V7Tests.test_disabled_not_evaluated) ... ok
+test_empty_data_rejected (test_v7.V7Tests.test_empty_data_rejected) ... ok
+test_naive_rejected_for_live (test_v7.V7Tests.test_naive_rejected_for_live) ... ok
+test_nested_sqlite_dir (test_v7.V7Tests.test_nested_sqlite_dir) ... ok
+test_owner_commands_block_others (test_v7.V7Tests.test_owner_commands_block_others) ... ok
+test_precision_5digits (test_v7.V7Tests.test_precision_5digits) ... ok
+test_reference_po3_hash (test_v7.V7Tests.test_reference_po3_hash) ... ok
+test_registry_research_cannot_authorize_demo (test_v7.V7Tests.test_registry_research_cannot_authorize_demo) ... ok
+test_registry_toggle_only_one (test_v7.V7Tests.test_registry_toggle_only_one) ... ok
+test_unique_executable_generators (test_v7.V7Tests.test_unique_executable_generators) ... ok
+test_utc_csv_load (test_v7.V7Tests.test_utc_csv_load) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.496s
+
+OK
+RUN: ['/opt/pyvenv/bin/python', '-m', 'scripts.check_configuration']
+Mode: OFFLINE Demo send enabled: False Live send enabled: False
+Data: candles_15min_ctrader.csv, candles_1day_ctrader.csv, candles_1h_ctrader.csv, candles_1min_ctrader.csv, candles_30min_ctrader.csv, candles_4h_ctrader.csv, candles_5min_ctrader.csv
+Optional cTrader vars set: {'CTRADER_CLIENT_ID': False, 'CTRADER_CLIENT_SECRET': False, 'CTRADER_ACCESS_TOKEN': False, 'CTRADER_ACCOUNT_ID': False, 'CTRADER_SYMBOL_ID': False}
+ALL_OFFLINE_CHECKS_PASS
