@@ -1,7 +1,17 @@
-# GoldStation V9 — Upload destination
+# V9 — original project uploaded as individual files
 
-ارفع هنا أجزاء V9 الأربعة باستخدام GitHub Upload files. كل واحد أقل من 10MB.
+تم حفظ مشروع GoldStation V9 كملفات مفكوكة في جذر المستودع، مع نقل الأصول الثنائية بنص Base64 إلى `binary_assets/`.
 
-الأجزاء الثنائية غير موجودة حتى الآن؛ راجع صفحة المستودع الرئيسية لمعرفة البصمات والتعليمات.
+**لا تحتاج إلى ZIP ولا إلى Upload files يدوياً.**
 
-Do not put access tokens, account credentials, or .env secrets in this repository.
+أعد قاعدة الشموع والأرشيف السابق بالآتي من جذر المستودع:
+
+```bash
+python3 scripts/restore_v9_binaries.py
+```
+
+للاختبار والتحقق من البصمات:
+
+```bash
+python3 scripts/restore_v9_binaries.py --verify-only
+```
