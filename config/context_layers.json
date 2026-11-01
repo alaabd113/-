@@ -1,0 +1,6 @@
+{
+  "smc_gate": false,
+  "vp_gate": false,
+  "vp_lookback": 200,
+  "description": "Context is computed and logged. Set smc_gate/vp_gate true to require confirmation. VP gate rejects orders with no volume."
+}
