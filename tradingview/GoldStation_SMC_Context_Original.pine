@@ -1,0 +1,44 @@
+// Independently authored generic SMC context example. NOT LuxAlgo source/parity.
+//@version=6
+indicator("GoldStation — Confirmed SMC Context",overlay=true,max_labels_count=150,max_boxes_count=40)
+span = input.int(3,"Swing confirmation bars",minval=1,maxval=30)
+showGaps=input.bool(true,"Mark newly confirmed FVG")
+showPivots=input.bool(true,"Mark confirmed swing pivots")
+ph=ta.pivothigh(high,span,span)
+pl=ta.pivotlow(low,span,span)
+var float lastH=na
+var float lastL=na
+var bool brokenH=false
+var bool brokenL=false
+var int bias=0
+string event=""
+if barstate.isconfirmed
+    // Compare with previously known confirmed levels before updating pivots.
+    if not na(lastH) and not brokenH and close>lastH
+        event := bias<0 ? "CHoCH↑" : "BOS↑"
+        bias:=1
+        brokenH:=true
+    else if not na(lastL) and not brokenL and close<lastL
+        event := bias>0 ? "CHoCH↓" : "BOS↓"
+        bias:=-1
+        brokenL:=true
+    if not na(ph)
+        lastH:=ph
+        brokenH:=false
+    if not na(pl)
+        lastL:=pl
+        brokenL:=false
+    if event!=""
+        label.new(bar_index,close,event,style=bias==1?label.style_label_down:label.style_label_up,textcolor=color.white,color=bias==1?color.teal:color.red)
+newBullGap=barstate.isconfirmed and low>high[2]
+newBearGap=barstate.isconfirmed and high<low[2]
+plotshape(showGaps and newBullGap, "Bull FVG", shape.square, location.belowbar,color.new(color.teal,30),size=size.tiny)
+plotshape(showGaps and newBearGap, "Bear FVG", shape.square, location.abovebar,color.new(color.red,30),size=size.tiny)
+plotshape(showPivots and not na(ph),"Confirmed swing high",shape.circle,location.abovebar,color.new(color.red,20),offset=0,size=size.tiny)
+plotshape(showPivots and not na(pl),"Confirmed swing low",shape.circle,location.belowbar,color.new(color.teal,20),offset=0,size=size.tiny)
+plot(lastH,"Confirmed resistance",color=color.new(color.red,45),style=plot.style_stepline)
+plot(lastL,"Confirmed support",color=color.new(color.teal,45),style=plot.style_stepline)
+alertcondition(event=="BOS↑","Bullish BOS","Confirmed bullish BOS")
+alertcondition(event=="BOS↓","Bearish BOS","Confirmed bearish BOS")
+alertcondition(event=="CHoCH↑","Bullish CHoCH","Confirmed bullish CHoCH")
+alertcondition(event=="CHoCH↓","Bearish CHoCH","Confirmed bearish CHoCH")
