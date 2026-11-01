@@ -1,0 +1,2 @@
+Original prior integrated ZIP (not redistributed inside this bundle to avoid including historical state/secrets): GoldStation_GitHub_Wide_Research_2026-11-01_FULL.zip
+The runnable new system imports only reviewed data and audited research helpers. Old engine remains available in previous delivered ZIP.
